@@ -11,7 +11,6 @@
   <link href="assets/css/ui.bootstrap.css?1470238880" media="screen,print" rel="stylesheet" type="text/css">
   <link href="assets/css/ui.chronoblue.css" media="screen,print" rel="stylesheet" type="text/css">
   <link href="assets/webfonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/css/materialize.css" media="screen,print" rel="stylesheet" type="text/css">
   <link href="assets/css/custom.css" media="screen,print" rel="stylesheet" type="text/css">
   <!--[if lt IE 7]> <link href="/css/admin-ie6.css?1363792069" media="screen,print" rel="stylesheet" type="text/css" ><![endif]-->
   <!--[if lt IE 8]> <link href="/css/admin-ie7.css?1363792069" media="screen,print" rel="stylesheet" type="text/css" ><![endif]-->
@@ -192,10 +191,10 @@
 
 	<div class="span12 text-right">
 		
-		<button id="edit-event-btn" href="/admin/event/edit?_step=1&amp;eventID=13475" class="ubutton popup add-tooltip uicon blue btn" data-icon-color="icon-white" data-icon="icon-pencil" data-original-title="Edit this event's properties"><i class="fa fa-pencil"></i> Edit</button>
-		<button title="Publish Event Landing Page" id="archive-event-btn" class="popup ubutton dd-tooltip blue btn" href="/admin/event/publish-athlinks/isPublishedAthlinks/1"><i class="fa fa-share"></i> <span class="hidden-phone">Publish</span></button>
-		<button class="blue btn"><i class="fa fa-line-chart"></i> <span class="hidden-phone">Analytics</span></button>
-		<button class="btn red" data-toggle="collapse" data-target="#warningMessages">
+		<button id="edit-event-btn" href="/admin/event/edit?_step=1&amp;eventID=13475" class="ubutton popup add-tooltip uicon btn-success btn" data-icon-color="icon-white" data-icon="icon-pencil" data-original-title="Edit this event's properties"><i class="fa fa-pencil"></i> Edit</button>
+		<button title="Publish Event Landing Page" id="archive-event-btn" class="popup ubutton dd-tooltip btn-primary btn" href="/admin/event/publish-athlinks/isPublishedAthlinks/1"><i class="fa fa-share"></i> <span class="hidden-phone">Publish</span></button>
+		<button class="btn-primary btn"><i class="fa fa-line-chart"></i> <span class="hidden-phone">Analytics</span></button>
+		<button class="btn btn-danger" data-toggle="collapse" data-target="#warningMessages">
 			<i class="fa fa-bell"></i>
 		</button>
 	</div>
@@ -238,7 +237,7 @@
 				<div class="card-title">Image</div>
 			</div>
 			<div class="col-card-button">
-				<button href="/admin/event-graphic/import?eventGraphicID=236685" class="hero-image ubutton add-tooltip btn-flat popup btn-primary btn btn-card-main"><i class="fa fa-upload"></i> Upload</button>
+				<button href="/admin/event-graphic/import?eventGraphicID=236685" class="hero-image ubutton add-tooltip btn-primary popup btn-primary btn"><i class="fa fa-upload"></i> Upload</button>
 			</div>
 		</div>
 
@@ -268,7 +267,7 @@
 				<div class="card-title">Description</div>
 			</div>
 			<div class="col-card-button">
-				<button type="submit" id="save-landing-page" class="uicon btn btn-card-main btn-flat" data-icon="icon-ok-sign" data-icon-color="icon-white" href="javascript:void();"><i class="fa fa-save"></i> Save</button>
+				<button type="submit" id="save-landing-page" class="uicon btn btn-primary" data-icon="icon-ok-sign" data-icon-color="icon-white" href="javascript:void();"><i class="fa fa-save"></i> Save</button>
 			</div>
 		</div>
 
@@ -375,7 +374,7 @@
 				<div class="card-title">Races</div>
 			</div>
 			<div class="col-card-button">
-		  	<button data-activity="/admin/race/create" href="/admin/race/create/" data-font-size="0.9em" class="add-race ubutton popup add-tooltip uicon btn btn-flat btn-card-main" data-icon-color="icon-white" data-placement="bottom" data-icon="icon-plus" id="dbRaceAddButton" data-original-title="Add a new race to this event"><i class="fa fa-plus"></i> Add Race</button>
+		  	<button data-activity="/admin/race/create" href="/admin/race/create/" data-font-size="0.9em" class="add-race ubutton popup add-tooltip uicon btn btn-primary" data-icon-color="icon-white" data-placement="bottom" data-icon="icon-plus" id="dbRaceAddButton" data-original-title="Add a new race to this event"><i class="fa fa-plus"></i> Add Race</button>
 			</div>
 		</div>
 		<div>
@@ -466,8 +465,8 @@
 </div>
 
 <div class="text-right">
-			<button id="clone-event-btn" href="/admin/event/copy?_step=1" class="popup ubutton add-tooltip uicon btn-flat orange-text btn" data-icon-color="icon-white" data-icon="icon-tags" data-original-title="Clone this event"><i class="fa fa-clone"></i> Clone</button>
-			<button id="remove-event-btn" href="/admin/event/remove?eventID=13475" class="ubutton popup add-tooltip uicon btn-flat orange-text btn" data-icon-color="icon-white" data-icon="icon-trash" data-original-title="Remove this event"><i class="fa fa-trash"></i> Delete</button>
+			<button id="clone-event-btn" href="/admin/event/copy?_step=1" class="popup ubutton add-tooltip uicon btn-warning btn" data-icon-color="icon-white" data-icon="icon-tags" data-original-title="Clone this event"><i class="fa fa-clone"></i> Clone</button>
+			<button id="remove-event-btn" href="/admin/event/remove?eventID=13475" class="ubutton popup add-tooltip uicon btn-warning btn" data-icon-color="icon-white" data-icon="icon-trash" data-original-title="Remove this event"><i class="fa fa-trash"></i> Delete</button>
 		</div>
 
 </div>

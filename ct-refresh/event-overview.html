@@ -185,291 +185,82 @@
 				</div>
 			</div>
 
-<!-- START EVENT ACTIONS -->
-
-<div class="row-fluid event-action-buttons">
-
-	<div class="span12 text-right">
-		
-		<button id="edit-event-btn" href="/admin/event/edit?_step=1&amp;eventID=13475" class="ubutton popup add-tooltip uicon btn-success btn" data-icon-color="icon-white" data-icon="icon-pencil" data-original-title="Edit this event's properties"><i class="fa fa-pencil"></i> Edit</button>
-		<button title="Publish Event Landing Page" id="archive-event-btn" class="popup ubutton dd-tooltip btn-primary btn" href="/admin/event/publish-athlinks/isPublishedAthlinks/1"><i class="fa fa-share"></i> <span class="hidden-phone">Publish</span></button>
-		<button class="btn-primary btn"><i class="fa fa-line-chart"></i> <span class="hidden-phone">Analytics</span></button>
-		<button class="btn btn-danger" data-toggle="collapse" data-target="#warningMessages">
-			<i class="fa fa-bell"></i>
-		</button>
-	</div>
-
-</div>
-
-<div id="warningMessages" class="collapse">
-		<div class="eventNotification well">
-			<ul class="unstyled">
-				<li>
-					Race <b>Miami Marathon</b> currently has an Age Ref Time that is different than the Race's Start Time.
+			<div class="row-fluid">
+				<div class="span6">
+					<div class="ui-helper-clearfix">
+					<h3 style="float:left">Event Properties</h3>
+					</div>
+					<table class="info-table" style="width:auto"><tbody><tr><th>Name:</th>
+								<td style="min-width:300px">2019 Chicago Half Marathon &amp; 5K</td>
+							</tr><tr><th>Date:</th>
+								<td>Sep 23, 2019 7:00 AM CDT</td>
+							</tr><tr data-activity="/admin/entry/export"><th>Location:</th>
+								<td>Chicago, IL</td>
+							</tr><tr><th>Links:</th>
+								<td>
+									<ul style="margin:0px;padding:0px;" class="no-bullet event-links"><li><a href="http://www.chicagohalfmarathon.com" class="external" id="event-website-link">Event Web Site</a></li>
+																								<li><a href="https://admin.chronotrack.com/user/account/confirm-reg?la=7d9b98a8f6f4ca84612ec1ce90eded3185dd2897" class="external" id="confirm-registration-link">Confirm Registration</a></li>
+																	<li>
+											<a href="#" onclick="return hs.htmlExpand(this, { outlineType: 'rounded-white', wrapperClassName: 'draggable-header',
+											headingText: 'Athlete Updates Link and Instructions' } )" class="highslide">
+												Athlete Updates                </a>
+											<div class="highslide-maincontent">
+												<a href="https://register.chronotrack.com/event/tracking/eventID/34627" class="external" id="athlete-tracking-link">Link to Athlete Update application</a> <br><br><p>
+													Embed instructions: To embed the Athlete Update application within your website insert the following snippet of code into your HTML code:<br><br><code style="color: green;">
+													&lt;iframe frameborder="0" style="height:510px;width:630px;" src="https://register.chronotrack.com/event/tracking/eventID/34627"&gt;<br>
+													&nbsp;&nbsp;Athlete Update<br>
+													&lt;/iframe&gt;
+													</code>
+												</p>
+												<br><br></div>
+										</li>
+																</ul></td>
+							</tr><tr><th>Results:</th>
+								<td><ul style="margin:0;padding:0;" class="no-bullet event-links"><li>
+					<a href="https://results.chronotrack.com/event/results/event/event-34627" target="event34627Results" class="external" id="online-results-link">
+						ChronoTrack Widget    </a>
 				</li>
 				<li>
-					Race <b>Miami Half Marathon</b> currently has an Age Ref Time that is different than the Race's Start Time.
+					<a href="https://results.chronotrack.com/kiosk/results?eventID=34627" class="external" id="onsite-results-link">
+						Onsite    </a>
 				</li>
-				<li>
-					Race <b>Shuttle</b> currently has an Age Ref Time that is different than the Race's Start Time.
-				</li>
-				<li>
-					Race <b>Tropical 5K</b> currently has an Age Ref Time that is different than the Race's Start Time.
-				</li>
-			</ul>
-		</div>
-	</div>
-
-<!-- END EVENT ACTIONS -->
-
-<div class="container row-fluid">
-
-<!-- START EVENT DASHBOARD LEFT -->
-
-<div class="span6">
-
-<!-- ELP IMAGE -->
-
-<div class="card">
-	<div class="card-content">
-		<div class="card-header">
-			<div class="col-card-title">
-				<div class="card-title">Image</div>
-			</div>
-			<div class="col-card-button">
-				<button href="/admin/event-graphic/import?eventGraphicID=236685" class="hero-image ubutton add-tooltip btn-primary popup btn-primary btn"><i class="fa fa-upload"></i> Upload</button>
-			</div>
-		</div>
-
-		<div class="hero-image-holder">
-		  <img src="assets/img/elp-photo.jpg">
-		</div>
-	
-		<div class="help-expand text-right light-blue-text" data-toggle="collapse" data-target="#help-event-image"><i class="fa fa-info-circle"></i></div>
-
-		<div class="collapse" id="help-event-image">
-			<div class="well">
-			  <small>The Event Landing Page will utilize event type default image(s) until you upload a Custom Image.</small>
-			</div>
-		</div>
-
-	</div>
-</div>
-
-<!-- END ELP IMAGE -->
-
-<!-- EVENT DESCRIPTION -->
-
-<div class="card">
-	<div class="card-content">
-		<div class="card-header">
-			<div class="col-card-title">
-				<div class="card-title">Description</div>
-			</div>
-			<div class="col-card-button">
-				<button type="submit" id="save-landing-page" class="uicon btn btn-primary" data-icon="icon-ok-sign" data-icon-color="icon-white" href="javascript:void();"><i class="fa fa-save"></i> Save</button>
-			</div>
-		</div>
-
-		<div class="extended-event-description">
-		  
-		  <h5 class="description-label">Excerpt</h5>
-
-		  <p class="event-description">The Torchlight 5k is the PARTY of the summer, that just happens to start with a run! Whether you are a dedicated runner, or just someone who jogs from the couch to the fridge, the Torchlight 5k is the fun run for everyone! Grab your family and friends, and then grab your running shoes - because the Torchlight 5k is the one run that starts with a bang and ends with a brew. That's right, our legendary post-race party features live entertainment and complimentary refreshments.</p>
-
-		  <h5 class="description-label">Extended Event Description</h5>
-
-		  <form id="eventlandingpage" name="eventlandingpage" enctype="application/x-www-form-urlencoded" action="/admin/event/landing-page" class="form-horizontal" method="post">
-		    <dl class="zend_form">
-		      <dd id="extended_description-element">
-		        <div class="md-editor" id="1470538613502">
-		          <div class="md-header">
-
-		              <button class="btn grey lighten-1" title="Bold" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdBold"><i class="fa fa-bold"></i> </button>
-		              <button class="btn grey lighten-1" title="Italic" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdItalic"><i class="fa fa-italic"></i> </button>
-
-		              <button class="btn grey lighten-1" title="URL/Link" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdUrl"><i class="fa fa-link"></i> </button>
-
-		              <button class="btn grey lighten-1" title="List" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdList"><i class="fa fa-list"></i> </button>
-
-		              <button class="btn blue lighten-1" title="Preview" tabindex="-1" data-provider="bootstrap-markdown" data-handler="bootstrap-markdown-cmdPreview" data-toggle="button"><i class="fa fa-eye"></i></button>
-
-		          </div>
-		          <textarea name="extended_description" id="extended_description" class="form-text markdown-editor hide-label md-input span12" style="width: 100%; resize: none;" rows="10" cols="80" data-hidden-buttons="cmdImg">This is my extended description. Testing more.</textarea>
-		        </div>
-		      </dd>
-		    </dl>
-		  </form>
-		</div>
-
-		<div class="help-expand text-right light-blue-text" data-toggle="collapse" data-target="#help-event-description"><i class="fa fa-info-circle"></i></div>
-
-		<div class="collapse" id="help-event-description">
-			<div class="well">
-			  <small>Enter additional description and/or hyperlinks of the event in 1500 characters or less. This content will be available on the Event Landing Page under the default view of the Description by hitting [MORE].</small>
-			</div>
-		</div>
-
-	</div>
-</div>
-
-<!-- START EVENT LINDS AND ACTION BUTTONS -->
-
-<div class="card">
-	<div class="card-content">
-		<div class="card-header">
-			<div class="col-card-title">
-				<div class="card-title">Tools</div>
-			</div>
-		</div>
-		<table class="info-table" style="width:auto">
-			<tbody>
-				<tr>
-					<td>
-						<ul style="margin:0px;padding:0px;" class="no-bullet event-links"><li><a href="http://www.themiamimarathon.com" class="external" id="event-website-link">Event Web Site</a></li>
-							<li><a href="https://register.chronotrack.com/reg/form?eventID=13475" target="event13475Registration" id="online-registration-link" class="external">Online Registration</a></li><li data-activity="/admin/event/index/responsive-form-link"><a href="https://register.chronotrack.com/r/13475" target="event13475ResponsiveRegistrationForm" id="responsive-online-registration-link" class="external">Responsive Online Registration</a></li>
-							<li><a href="https://register.chronotrack.com/reg/form?kioskID=14043" target="event13475Onsite" class="external" id="onsite-registration-link">On-Site Registration</a></li>              <li><a href="https://results.chronotrack.com/event/results/event/event-13475" target="event13475Results" class="external" id="online-results-link">Online Results</a></li>
-							<li><a href="https://results.chronotrack.com/kiosk/results?eventID=13475" class="external" id="onsite-results-link">On-Site Results</a></li>
-							<li><a href="https://admin.chronotrack.com/user/account/confirm-reg?la=a28eab200df4e6bd39d1a854acd289654acbb01c" class="external" id="confirm-registration-link">Confirm Registration</a></li>
-							<li>
-								<a href="#" onclick="return hs.htmlExpand(this, { outlineType: 'rounded-white', wrapperClassName: 'draggable-header', headingText: 'Athlete Updates Link and Instructions' } )" class="highslide">Athlete Updates</a>	
-								<div class="highslide-maincontent">
-									<a href="https://register.chronotrack.com/event/tracking/eventID/13475" class="external" id="athlete-tracking-link">Link to Athlete Update application</a>
-									<br><br>
-									<p>Embed instructions: To embed the Athlete Update application within your website insert the following snippet of code into your HTML code:
-										<br><br>
-										<code style="color: green;">&lt;iframe frameborder="0" style="height:510px;width:630px;" src="https://register.chronotrack.com/event/tracking/eventID/13475"&gt;<br>&nbsp;&nbsp;Please upgrade your browser<br>&lt;/iframe&gt;</code>
-									</p>
-									<br><br>
+						<li>
+						<a href="/admin/panels/create?_step=1&amp;eventID=34627&amp;timerID=3438" target="_blank" class="external" id="quick-panel-link">Create New Panel</a>
+					</li>
+				</ul></td>
+							</tr><tr><th>Event Excerpt:</th>
+								<td>The Chicago Half Marathon &amp; 5K gives you the chance to run on Lake Shore Drive! This scenic 13.1 mile course will start and finish in Jackson Park and showcase the south lakefront and Jackson Park Golf Course. The Lake Shore Drive stretch offers beautiful views of the great Chicago Skyline.</td>
+							</tr></tbody></table><button id="edit-event-btn" href="/admin/event/edit?_step=1&amp;eventID=34627" class="ubutton popup add-tooltip uicon btn-info margin-right5 pull-left btn" data-icon-color="icon-white" data-icon="icon-pencil" data-original-title="Edit this event's properties">Event Properties<i class="icon-pencil icon-white button-icon-left"></i></button>
+			<!--    Cannot clone or remove on on-site side-->
+											<button id="clone-event-btn" href="/admin/event/copy?_step=1" class="popup ubutton add-tooltip uicon btn-success margin-right5 pull-left btn" data-icon-color="icon-white" data-icon="icon-tags" data-original-title="Clone this event">Clone Event<i class="icon-tags icon-white button-icon-left"></i></button>
+													<a target="_blank" href="https://start.athlinks.com/chronotrack/Index?searchId=34627" class="ubutton add-tooltip uicon btn-info margin-right5 pull-left btn-primary btn" data-icon-color="icon-white" data-icon="icon-random" data-original-title="Link Event to Athlinks">Link to Athlinks<i class="icon-random icon-white button-icon-left"></i></a>
+							<a class="pull-left margin-top5" target="_blank" href="https://knowledge.chronotrack.com/hc/en-us/articles/206171910"><i class="fa fa-question-circle"></i></a>
+									</div>
+				<div class="span6 last">
+					<div class="ui-helper-clearfix">
+					<h3 style="float:left">Races <span style="font-size:0.7em">(Click to edit. Drag to reorder.)<span></span></span></h3>
+					<button data-activity="/admin/race/create" href="/admin/race/create/" data-font-size="0.9em" style="float:right;margin-right:33px;" class="add-race ubutton popup add-tooltip uicon btn-success btn" data-icon-color="icon-white" data-placement="bottom" data-icon="icon-plus" id="dbRaceAddButton" data-original-title="Add a new race to this event">Add Race<i class="icon-plus icon-white button-icon-left"></i></button>
+					</div>
+							<div style="padding-left: 19px;">
+						<ul class="race-list no-bullet dnd-sortable display-orderable ui-corner-all ui-sortable" data-model="race"><li id="raceHalfMarathon" data-race-id="86709">
+											<a style="width:90%" href="/admin/race/edit?raceID=86709" class="ubutton add-tooltip popup btn" id="race-HalfMarathon" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> Half Marathon</a>
+							<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=86709" class="add-tooltip popup" data-original-title="Remove this race"><i class="icon-remove"></i></a>
+						</li>
+										<li id="raceAddonPackages" data-race-id="86710">
+											<a style="width:90%" href="/admin/race/edit?raceID=86710" class="ubutton add-tooltip popup btn" id="race-AddonPackages" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> Add on Packages</a>
+							<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=86710" class="add-tooltip popup" data-original-title="Remove this race"><i class="icon-remove"></i></a>
+						</li>
+										<li id="race5K" data-race-id="86711">
+											<a style="width:90%" href="/admin/race/edit?raceID=86711" class="ubutton add-tooltip popup btn" id="race-5K" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> 5K</a>
+							<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=86711" class="add-tooltip popup" data-original-title="Remove this race"><i class="icon-remove"></i></a>
+						</li>
+													</ul></div>
+					<div style="padding: 1em 0em">
+						<h3>Race Registration Status</h3>
+									<p>No registrations yet.</p>
 								</div>
-							</li>  
-							<li><a href="/admin/panels/create?_step=1&amp;eventID=13475&amp;timerID=4037" target="_blank" class="external" id="quick-panel-link">Create New Panel</a></li>
-						</ul>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-<!--    Cannot clone or remove on on-site side-->
-
-	</div>
-
-</div>
-
-<!-- END EVENT LINKS AND ACTION BUTTONS -->
-
-</div>
-
-<!-- END EVENT DASHBOARD LEFT -->
-
-<!-- START EVENT DASHBOARD RIGHT -->
-
-<div class="span6 last">
-
-<!-- START RACES -->
-
-<div class="card">
-	<div class="card-content">
-		<div class="card-header">
-			<div class="col-card-title">
-				<div class="card-title">Races</div>
+				</div>
 			</div>
-			<div class="col-card-button">
-		  	<button data-activity="/admin/race/create" href="/admin/race/create/" data-font-size="0.9em" class="add-race ubutton popup add-tooltip uicon btn btn-primary" data-icon-color="icon-white" data-placement="bottom" data-icon="icon-plus" id="dbRaceAddButton" data-original-title="Add a new race to this event"><i class="fa fa-plus"></i> Add Race</button>
-			</div>
-		</div>
-		<div>
-			<ul class="races collection no-bullet dnd-sortable display-orderable ui-corner-all ui-sortable" data-model="race">
-				<li id="raceMiamiMarathon" data-race-id="31284" class="collection-item">
-					<a href="http://www.athlinks.com/Race/Event?raceID=512299&amp;courseID=763916" target="_blank" class="add-tooltip" data-original-title="Navigate to Athlinks Race Page">
-					<img src="assets/img/athlinksOn.png"></a>
-					<a style="width:80%" href="/admin/race/edit?raceID=31284" class="ubutton add-tooltip popup" id="race-MiamiMarathon" data-original-title="Click to edit; drag to re-order">Miami Marathon</a>
-					<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=31284" class="add-tooltip popup" data-original-title="Remove this race"><i class="fa fa-trash"></i></a>  
-				</li>
-				<li id="raceMiamiHalfMarathon" data-race-id="31285" class="collection-item">
-					<a href="http://www.athlinks.com/Race/Event?raceID=512299&amp;courseID=763915" target="_blank" class="add-tooltip" data-original-title="Navigate to Athlinks Race Page">
-						<img src="assets/img/athlinksOn.png">
-					</a>
-					<a style="width:80%" href="/admin/race/edit?raceID=31285" class="ubutton add-tooltip popup" id="race-MiamiHalfMarathon" data-original-title="Click to edit; drag to re-order">Miami Half Marathon</a>
-					<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=31285" class="add-tooltip popup" data-original-title="Remove this race"><i class="fa fa-trash"></i></a>  
-				</li>
-				<li id="raceShuttle" data-race-id="31286" class="collection-item">
-					<a href="#" class="add-tooltip" data-original-title="No corresponding Athlinks Race">
-					<img src="assets/img/athlinksOn.png"></a>
-					<a style="width:80%" href="/admin/race/edit?raceID=31286" class="ubutton add-tooltip popup" id="race-Shuttle" data-original-title="Click to edit; drag to re-order">Shuttle</a>
-					<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=31286" class="add-tooltip popup" data-original-title="Remove this race"><i class="fa fa-trash"></i></a>  
-				</li>
-				<li id="raceTropical5K" data-race-id="31287" class="collection-item">
-					<a href="http://www.athlinks.com/Race/Event?raceID=512299&amp;courseID=763917" target="_blank" class="add-tooltip" data-original-title="Navigate to Athlinks Race Page">
-					<img src="assets/img/athlinksOn.png"></a>
-					<a style="width:80%" href="/admin/race/edit?raceID=31287" class="ubutton add-tooltip popup" id="race-Tropical5K" data-original-title="Click to edit; drag to re-order">Tropical 5K</a>
-					<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=31287" class="add-tooltip popup" data-original-title="Remove this race"><i class="fa fa-trash"></i></a>  
-				</li>
-				<li id="raceMetrorailEASYTicketRaceDay" data-race-id="54237" class="collection-item">
-					<a href="#" class="add-tooltip" data-original-title="No corresponding Athlinks Race">
-					<img src="assets/img/athlinksOn.png"></a>
-					<a style="width:80%" href="/admin/race/edit?raceID=54237" class="ubutton add-tooltip popup" id="race-MetrorailEASYTicket(RaceDay)" data-original-title="Click to edit; drag to re-order">Metrorail EASY Ticket (Race Day)</a>
-					<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=54237" class="add-tooltip popup" data-original-title="Remove this race"><i class="fa fa-trash"></i></a>  
-				</li>
-			</ul>
-		</div>
-		<div class="card-action">
-      <a title="Sync Results with Athlinks" id="push-results-btn" href="/admin/results/athlinks" class="popup ubutton dd-tooltip uicon blue-text"><i class="fa fa-upload"></i> Upload Results</a>
-		</div>
-	</div>
-</div>
-
-<!-- END RACES -->
-
-<!-- START EXTERNAL LINKS -->
-
-<div class="card">
-	<div class="card-content">
-		<div class="card-header">
-			<div class="col-card-title">
-				<div class="card-title">Links</div>
-			</div>
-		</div>
-    <div class="landing-links">
-      Landing Page:<br><a target="blank" href="http://www.athlinks.com/event/moonshiner-fun-5k-iii-174556">http://www.athlinks.com/event/moonshiner-fun-5k-iii-174556</a>    
-    </div>
-    <div class="landing-links">
-      Official Website:<br><a target="blank" href="http://www.athlinks.com">http://www.athlinks.com</a>    
-    </div>
-    <div class="landing-links">
-      Facebook:<br><a target="blank" href="http://www.facebook.com/athlinks">http://www.facebook.com/athlinks</a>    
-    </div>
-    <div class="landing-links">
-      Twitter:<br><a target="blank" href="http://www.twitter.com/athlinks">http://www.twitter.com/athlinks</a>
-    </div>
-    <div class="landing-links">
-    	Instagram:<br><a target="blank" href="http://www.instagram.com/athlinks">http://www.instagram.com/athlinks</a>
-    </div>
-    <div class="landing-links">
-      Timer Website:<br><span class="muted">Not Available</span>
-    </div>
-    <div class="landing-links">
-      Organizer Website:<br><a target="blank" href="http://www.athlinks.com">http://www.athlinks.com</a>
-    </div>
-    <div class="landing-links">
-      3rd Party Reg:<br><span class="muted">Not Available</span>
-    </div>
-  </div>
-</div>
-
-<!-- END EXTERNAL LINKS -->
-
-</div>
-
-<!-- END SPAN6 RIGHT COLUMN -->
-
-</div>
-
-<div class="text-right">
-			<button id="clone-event-btn" href="/admin/event/copy?_step=1" class="popup ubutton add-tooltip uicon btn-warning btn" data-icon-color="icon-white" data-icon="icon-tags" data-original-title="Clone this event"><i class="fa fa-clone"></i> Clone</button>
-			<button id="remove-event-btn" href="/admin/event/remove?eventID=13475" class="ubutton popup add-tooltip uicon btn-warning btn" data-icon-color="icon-white" data-icon="icon-trash" data-original-title="Remove this event"><i class="fa fa-trash"></i> Delete</button>
-		</div>
-
-</div>
 
 <div class="dialogform"></div>
 

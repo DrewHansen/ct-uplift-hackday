@@ -12,6 +12,11 @@ body {
 	padding-top: 75px;
 }
 
+h3 {
+	font-family: proximaNova;
+	font-weight: normal;
+	color: #4a4a4a;
+}
 
 /* HEADER */
 
@@ -1344,9 +1349,14 @@ div.paginationControl{
 	background-color: transparent;
 }
 
+.info-table th {
+	width: 100px;
+}
+
 .container th, .container td{
 	border-right: none;
 	border-bottom: none;
+	padding-left: 0px;
 }
 
 @media (max-width: 768px){

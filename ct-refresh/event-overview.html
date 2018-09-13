@@ -190,10 +190,11 @@
 
 			<div class="row-fluid">
 				<div class="span6">
-					<div class="ui-helper-clearfix">
-					<h3 style="float:left">Event Properties</h3>
-					</div>
-					<table class="info-table" style="width:auto"><tbody><tr><th>Name:</th>
+					
+						<div class="ui-helper-clearfix">
+						<h3 style="float:left">Event Properties</h3>
+						</div>
+						<table class="info-table" style="width:auto"><tbody><tr><th>Name:</th>
 								<td style="min-width:300px">2019 Chicago Half Marathon &amp; 5K</td>
 							</tr><tr><th>Date:</th>
 								<td>Sep 23, 2019 7:00 AM CDT</td>
@@ -233,37 +234,49 @@
 				</ul></td>
 							</tr><tr><th>Event Excerpt:</th>
 								<td>The Chicago Half Marathon &amp; 5K gives you the chance to run on Lake Shore Drive! This scenic 13.1 mile course will start and finish in Jackson Park and showcase the south lakefront and Jackson Park Golf Course. The Lake Shore Drive stretch offers beautiful views of the great Chicago Skyline.</td>
-							</tr></tbody></table><button id="edit-event-btn" href="/admin/event/edit?_step=1&amp;eventID=34627" class="ubutton popup add-tooltip uicon btn-info margin-right5 pull-left btn" data-icon-color="icon-white" data-icon="icon-pencil" data-original-title="Edit this event's properties">Event Properties<i class="icon-pencil icon-white button-icon-left"></i></button>
+							</tr></tbody></table>
+							
+							<button id="edit-event-btn" href="/admin/event/edit?_step=1&amp;eventID=34627" class="ubutton popup add-tooltip uicon btn-info margin-right5 pull-left btn" data-icon-color="icon-white" data-icon="icon-pencil" data-original-title="Edit this event's properties">Event Properties<i class="icon-pencil icon-white button-icon-left"></i></button>
 			<!--    Cannot clone or remove on on-site side-->
 											<button id="clone-event-btn" href="/admin/event/copy?_step=1" class="popup ubutton add-tooltip uicon btn-success margin-right5 pull-left btn" data-icon-color="icon-white" data-icon="icon-tags" data-original-title="Clone this event">Clone Event<i class="icon-tags icon-white button-icon-left"></i></button>
 													<a target="_blank" href="https://start.athlinks.com/chronotrack/Index?searchId=34627" class="ubutton add-tooltip uicon btn-info margin-right5 pull-left btn-primary btn" data-icon-color="icon-white" data-icon="icon-random" data-original-title="Link Event to Athlinks">Link to Athlinks<i class="icon-random icon-white button-icon-left"></i></a>
 							<a class="pull-left margin-top5" target="_blank" href="https://knowledge.chronotrack.com/hc/en-us/articles/206171910"><i class="fa fa-question-circle"></i></a>
 									</div>
 				<div class="span6 last">
-					<div class="ui-helper-clearfix">
-					<h3 style="float:left">Races <span style="font-size:0.7em">(Click to edit. Drag to reorder.)<span></span></span></h3>
-					<button data-activity="/admin/race/create" href="/admin/race/create/" data-font-size="0.9em" style="float:right;margin-right:33px;" class="add-race ubutton popup add-tooltip uicon btn-success btn" data-icon-color="icon-white" data-placement="bottom" data-icon="icon-plus" id="dbRaceAddButton" data-original-title="Add a new race to this event">Add Race<i class="icon-plus icon-white button-icon-left"></i></button>
-					</div>
-							<div style="padding-left: 19px;">
-						<ul class="race-list no-bullet dnd-sortable display-orderable ui-corner-all ui-sortable" data-model="race"><li id="raceHalfMarathon" data-race-id="86709">
-											<a style="width:90%" href="/admin/race/edit?raceID=86709" class="ubutton add-tooltip popup btn" id="race-HalfMarathon" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> Half Marathon</a>
+					<div class="card">
+						<div class="ui-helper-clearfix">
+						<h3 style="float:left">Races <span style="font-size:0.5em; display: block; line-height: 1em;">Click to edit. Drag to reorder.<span></span></span></h3>
+						<button data-activity="/admin/race/create" href="/admin/race/create/" data-font-size="0.9em" style="float:right;margin-right:33px;" class="add-race ubutton popup add-tooltip uicon btn-success btn" data-icon-color="icon-white" data-placement="bottom" data-icon="icon-plus" id="dbRaceAddButton" data-original-title="Add a new race to this event">Add Race<i class="icon-plus icon-white button-icon-left"></i></button>
+						</div>
+							<div>
+						<ul class="race-list no-bullet dnd-sortable display-orderable ui-corner-all ui-sortable" data-model="race">
+							<li id="raceHalfMarathon" data-race-id="86709">
+									<a href="http://www.athlinks.com/event/225834/results/Event/697713/Course/1306991/Results" target="_blank" class="add-tooltip" data-original-title="Navigate to Athlinks Race Page">
+										<img src="assets/img/athlinksOn.png"></a>
+											<a style="width:90%" href="/admin/race/edit?raceID=86709" class="ubutton add-tooltip popup btn btn-secondary" id="race-HalfMarathon" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> Half Marathon</a>
 							<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=86709" class="add-tooltip popup" data-original-title="Remove this race"><i class="icon-remove"></i></a>
 						</li>
 										<li id="raceAddonPackages" data-race-id="86710">
-											<a style="width:90%" href="/admin/race/edit?raceID=86710" class="ubutton add-tooltip popup btn" id="race-AddonPackages" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> Add on Packages</a>
+												<a href="http://www.athlinks.com/event/225834/results/Event/697713/Course/1306991/Results" target="_blank" class="add-tooltip" data-original-title="Navigate to Athlinks Race Page">
+													<img src="assets/img/athlinksOn.png"></a>
+											<a style="width:90%" href="/admin/race/edit?raceID=86710" class="ubutton add-tooltip popup btn btn-secondary" id="race-AddonPackages" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> Add on Packages</a>
 							<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=86710" class="add-tooltip popup" data-original-title="Remove this race"><i class="icon-remove"></i></a>
 						</li>
 										<li id="race5K" data-race-id="86711">
-											<a style="width:90%" href="/admin/race/edit?raceID=86711" class="ubutton add-tooltip popup btn" id="race-5K" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> 5K</a>
+												<a href="http://www.athlinks.com/event/225834/results/Event/697713/Course/1306991/Results" target="_blank" class="add-tooltip" data-original-title="Navigate to Athlinks Race Page">
+													<img src="assets/img/athlinksOn.png"></a>
+											<a style="width:90%" href="/admin/race/edit?raceID=86711" class="ubutton add-tooltip popup btn btn-secondary" id="race-5K" data-original-title="Click to edit; drag to re-order"><i class="icon-pencil pull-right"></i> 5K</a>
 							<a data-activity="/admin/race/remove" data-placement="left" href="/admin/race/remove?raceID=86711" class="add-tooltip popup" data-original-title="Remove this race"><i class="icon-remove"></i></a>
 						</li>
 													</ul></div>
-					<div style="padding: 1em 0em">
+					</div>
+					<div class="card">
 						<h3>Race Registration Status</h3>
 									<p>No registrations yet.</p>
 								</div>
 				</div>
 			</div>
+	
 
 <div class="dialogform"></div>
 

@@ -1,0 +1,50 @@
+.language-switcher {
+  background: #ddd;
+  border: 1px solid #999;
+  border-top-left-radius: 8px;
+  color: black;
+  position:fixed; 
+  bottom:0px; 
+  right: 0px;
+  overflow:hidden;
+  font-size:11px;
+  padding:8px 10px 5px 10px;
+  z-index: 99;
+  height: auto;
+  margin: 0;
+  outline: 0 none;
+  vertical-align: baseline;
+}
+
+.language-switcher-opacity {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: 0.7;
+  -khtml-opacity: 0.7;
+  opacity: 0.7;
+}
+
+.language-switcher li {
+  width: auto;
+  float: left;
+  margin-right: 2px;
+}
+
+.language-switcher .current-lang img, .language-switcher ul li a img:hover {
+  border: 1px solid #094a88; 
+  background: #EDB087;
+  padding: 5px;
+}  
+.language-switcher img {
+  position: relative;
+  padding: 6px;
+  
+}
+
+.language-switcher ul {
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 0px;
+}

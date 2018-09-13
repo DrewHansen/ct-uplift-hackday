@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="mac chrome chrome5 webkit webkit5 js no-touch">
+<head>
+<title>Events</title><meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"Vg8EVlRbGwIFVFhRBwcC"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(s){try{i("ierr",[s,(new Date).getTime(),!0])}catch(c){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,e,n){u&&(d+=1)}),s.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),s.on(m,function(){this.bstStart=Date.now()}),s.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(17)(a),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){if(t[1]){var n=t[1];if("function"==typeof n){var r=c(n,"nr@wrapped",function(){return s(n,"fn-",null,n.name||"anonymous")});this.wrapped=t[1]=r}else"function"==typeof n.handleEvent&&s.inPlace(n,["handleEvent"],"fn-")}}),a.on(d+"-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&"function"==typeof t&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t){function e(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(u){d([u,"",[r,a,o],s])}f(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(l){throw f(e+"err",[r,a,l],s),l}finally{f(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,u(t,nrWrapper),nrWrapper)}function n(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!c){c=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}c=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),e.inPlace=n,e.flag=a,e}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,c=0;c<s;c++)a[c].apply(i,r);var u=f[w[n]];return u&&u.push([v,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return u[t]=u[t]||o(n)}function h(t,e){c(t,function(t,n){e=e||"feature",w[n]=e,e in f||(f[e]=[])})}var m={},w={},v={on:d,emit:n,get:p,listeners:l,context:e,buffer:h};return v}function i(){return new r}var a="nr@context",s=t("gos"),c=t(15),f={},u={},d=e.exports=o();d.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!g++){var t=y.info=NREUM.info,e=u.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(w,function(e,n){t[e]||(t[e]=n)});var n="https"===m.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",s("mark",["onload",a()],null,"api");var r=u.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===u.readyState&&i()}function i(){s("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var s=t("handle"),c=t(15),f=window,u=f.document,d="addEventListener",l="attachEvent",p=f.XMLHttpRequest,h=p&&p.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:p,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(12);var m=""+location,w={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-963.min.js"},v=p&&h&&h[d]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:m,features:{},xhrWrappable:v};u[d]?(u[d]("DOMContentLoaded",i,!1),f[d]("load",r,!1)):(u[l]("onreadystatechange",o),f[l]("onload",r)),s("mark",["firstbyte",a()],null,"api");var g=0},{}]},{},["loader",2,10,4,3]);</script><link href="assets/css/Aristo/Aristo.css" media="screen" rel="stylesheet" type="text/css" id="bz-theme">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="assets/css/bootstrap.css" media="screen,print" rel="stylesheet" type="text/css">
+<link href="assets/css/bootstrap-responsive.css" media="screen,print" rel="stylesheet" type="text/css">
+<link href="/js/language/en/js.json" rel="gettext" type="application/json">
+<link href="assets/css/admin.css?1469458773" media="screen,print" rel="stylesheet" type="text/css">
+<link href="assets/css/ui.bootstrap.css?1470238880" media="screen,print" rel="stylesheet" type="text/css">
+<link href="assets/css/ui.chronoblue.css" media="screen,print" rel="stylesheet" type="text/css">
+<link href="assets/webfonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/css/custom.css" media="screen,print" rel="stylesheet" type="text/css">
+<!--[if lt IE 7]> <link href="/css/admin-ie6.css?1363792069" media="screen,print" rel="stylesheet" type="text/css" ><![endif]-->
+<!--[if lt IE 8]> <link href="/css/admin-ie7.css?1363792069" media="screen,print" rel="stylesheet" type="text/css" ><![endif]-->
+<link href="assets/css/language-switcher.css" media="screen" rel="stylesheet" type="text/css">
+<style type="text/css">
+	.highslide img {cursor: url(/img/highslide/graphics/zoomin.cur), pointer !important;}.highslide-viewport-size {position: fixed; width: 100%; height: 100%; left: 0; top: 0}
+</style>
+</head>
+<body class="production module-admin controller-event action-index is-su lang-en ltr JS" data-time_format="g:i a" data-date_format="m/d/Y">
+<noscript>
+  &lt;div style="background:#ffc;text-align:center;padding:6px;line-height:1em;font-size:1em;"&gt;
+    &lt;p&gt;Your browser settings have disabled Javascript or your browser is not capable of executing javascript. Full use of this page requires that Javascript be enabled in your browser settings.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href="https://www.activatejavascript.org/" target="_blank"&gt;Click here for details on how to turn it on&lt;/a&gt;.&lt;/p&gt;
+  &lt;/div&gt;
+</noscript>
+<!-- //$this->render('gs-sign-in.phtml') -->
+
+<!-- START APP NAV -->
+
+<div id="admin-bar">
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div>
+	      <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+	        <i class="fa fa-bars"></i>
+	      </a>
+	      <a class="brand" href="#"><img src="assets/img/navbar-logo.png"></a>
+	      <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
+	        <ul class="nav">
+	          <li><a href="index.html" class="brand btn-primary">My Events</a></li>
+	          <li><a id="myAccount" no-context="1" data-activity="/admin/account" href="/admin/account/search" class="brand btn-primary">My Users</a></li>
+	          <li><a id="myOrgs" no-context="1" data-activity="/admin/organization/athletes" href="/admin/organization/athletes" class="brand btn-primary">My Orgs</a></li>
+	        </ul>
+	        <ul class="nav pull-right lang-switcher">
+          	<li class="dropdown">
+	    				<a data-toggle="dropdown" href="#" class="dropdown-toggle language" data-lang="en">
+	      				<img src="assets/img/en.png"><i class="fa fa-caret-down"></i>
+	    				</a>
+	    				<ul class="dropdown-menu lang-dropdown">
+		    				<li class="other-lang">
+		      				<a href="#" class="set-lang" data-lang="es" title="Spanish - español">
+		            		<img src="assets/img/es.png" style="margin-right: 10px;"><span>Spanish - español</span>
+		      				</a>
+		    				</li>
+    					</ul>
+    				</li>
+					</ul>
+
+					<ul class="nav pull-right">
+						<li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              	<img class="gravatar" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=16&amp;d=mm&amp;r=g">Dallin Moon <i class="fa fa-caret-down"></i></b>
+              </a>
+              <ul class="dropdown-menu">
+              	<li>
+              		<a id="editProfile" target="_blank" href="/user/profile/edit">Edit Profile</a>
+              	</li>
+                <li>
+                	<a id="accountSettings" href="/admin/account/settings" class="popup">Account Settings</a>
+                </li>
+                <li>
+                	<a id="signOut" href="/www/auth/sign-out?m=admin">Sign Out</a>
+                </li>
+                <li class="divider">
+                </li>
+                <li>
+                  <div class="user-info" style="margin-bottom: 0px;">
+                    <div class="row-fluid">
+                      <div class="span4">
+                        <img class="big-gravatar" style="float:left" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=80&amp;d=mm&amp;r=g"></div>
+                      <div class="span8">
+                        Dallin Moon<br>
+                        dmoon@lifetimefitness.com<br></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav pull-right">
+          	<li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Help <i class="fa fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+              	<li>
+              		<a target="_blank" href="http://knowledge.chronotrack.com">ChronoTrack Live Platform Help</a>
+              	</li>
+              </ul>
+            </li>
+          </ul>
+	      </div><!-- /.nav-collapse -->
+	    </div>
+	  </div><!-- /navbar-inner -->
+	</div>
+</div>
+
+<!-- END APP NAV -->
+
+<!-- START APP CONTENT -->
+
+<div id="page" class="row-fluid block">
+<div id="content" class="span12 text-content">
+<div class="container">
+
+<!-- START SEARCH PAGINATOR -->
+
+<div class="search-paginator event-search-paginator">
+
+<!-- START NEW EVENT -->
+	
+<div class="row-fluid new-event-button">
+	<div class="span12">
+  	<a title="Create a new event" id="create-event-btn" href="/admin/event/create?_step=1" class="popup btn blue">
+  		<i class="fa fa-plus"></i> New Event
+  	</a>
+  </div>
+</div>
+
+<!-- END NEW EVENT -->
+
+<!-- START SEARCH FORM -->
+
+<form id="search-event-form" enctype="application/x-www-form-urlencoded" action="/admin/event/search" data-title="Search Colorado Sprint - Sunday, May 14th 2017" class="form-inline form-search search event-search" method="post">
+	<fieldset id="fieldset-Search" class="">
+		<legend>My Events</legend>
+		
+		<div class="dg">
+
+			<div class="row-fluid">
+				<div class="span3">
+					<input type="hidden" name="submitvalue" value="" id="submitvalue">
+					<div class="control-group fr-q  " id="fr-q">
+						<label for="q" class="control-label-text-left optional">Event Name or ID</label>
+						<input type="text" name="q" id="q" value="" class="search-query span3">
+					</div>
+				</div>
+
+				<div class="span3">
+
+					<div class="control-group fr-status  " id="fr-status">
+						<label for="status" class="control-label-text-left optional">Time Frame</label>
+						<select name="status" id="status" singleerror="" class="chzn-done" style="display: none;">
+							<option value="All" label="All" selected="">All</option>
+							<option value="Recent" label="Recently Viewed">Recently Viewed</option>
+							<option value="Live" label="Live">Live</option>
+							<option value="Upcoming" label="Upcoming">Upcoming</option>
+							<option value="Past" label="Past">Past</option>
+						</select>
+
+						<div id="status_chzn" class="chzn-container chzn-container-single chzn-container-single-nosearch" style="margin-left: 0px;" title="">
+							<a href="javascript:void(0)" class="chzn-single" tabindex="-1">
+								<span>All <i class="fa fa-caret-down"></i></span>
+								<div>
+									<b></b>
+								</div>
+							</a>
+							<div class="chzn-drop span12" style="left: -9000px; margin-left: 0px !important; top: 32px;">
+								<div class="chzn-search" style="padding:0px; height: 0px; overflow: hidden;">
+									<input type="text" autocomplete="off" class="">
+								</div>
+								<ul class="chzn-results span12">
+									<li id="status_chzn_o_0" class="active-result result-selected" style="">All</li>
+									<li id="status_chzn_o_1" class="active-result" style="">Recently Viewed</li>
+									<li id="status_chzn_o_2" class="active-result" style="">Live</li>
+									<li id="status_chzn_o_3" class="active-result" style="">Upcoming</li>
+									<li id="status_chzn_o_4" class="active-result" style="">Past</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="span3">
+
+					<div class="control-group fr-organizer_id  " id="fr-organizer_id">
+						<label for="organizer_id" class="control-label-text-left optional">Organizer</label>
+						<select name="organizer_id" id="organizer_id" singleerror="" class="chzn-done" style="display: none;">
+							<option value="" label="Any Organizer" selected="">Any Organizer</option>
+							<option value="1" label="ChronoTrack - Do not use (Event)">ChronoTrack - Do not use (Event)</option>
+							<option value="2" label="ChronoTrack - Do not use (Timer)">ChronoTrack - Do not use (Timer)</option>
+							<option value="3" label="Remove-EventsOrg (Event)">Remove-EventsOrg (Event)</option>
+						</select>
+
+						<div id="status_chzn" class="chzn-container chzn-container-single chzn-container-single-nosearch" style="margin-left: 0px;" title="">
+							<a href="javascript:void(0)" class="chzn-single" tabindex="-1">
+								<span>Any Organizer <i class="fa fa-caret-down"></i></span>
+								<div>
+									<b></b>
+								</div>
+							</a>
+							<div class="chzn-drop span12" style="left: -9000px; margin-left: 0px !important; top: 32px;">
+								<div class="chzn-search" style="padding:0px; height: 0px; overflow: hidden;">
+									<input type="text" autocomplete="off" class="">
+								</div>
+								<ul class="chzn-results span12">
+									<li id="status_chzn_o_0" class="active-result result-selected" style="">Any Organizer</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+						<input type="hidden" name="eventID" value="21694" class="eventID" id="eventID">
+
+				</div>		
+			</div>
+
+			<div class="row-fluid">
+				<div class="span12">
+					<button name="submitsearch" id="submitsearch" type="submit" class="uicon btn blue btn-primary btn-phone-block" data-icon="icon-ok-sign" data-icon-color="icon-white" style="float:right">
+						<i class="fa fa-search"></i> Search
+					</button>
+				</div>
+			</div>
+
+		</div>
+
+	</fieldset>
+</form>
+
+<hr />
+
+<!-- END SEARCH FORM -->
+
+<!-- START PAGINATION CONTROL -->
+
+<div class="paginationControl">
+	<span class="row-range">1 - 12 of 22,604</span>
+		<span class="fright nav-buttons">
+			<a id="paginatorFirstButtonEntry" class="ubutton uicon ui-state-disabled btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-step-backward" href="#"><i class="fa fa-step-backward"></i></a>
+				<a id="paginatorPreviousButtonEntry" class="ubutton uicon ui-state-disabled btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-left" href="#"><i class="fa fa-chevron-left"></i></a>
+			<a id="paginatorNextButtonEntry" class="ubutton uicon btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-right" href="/admin/event/search/page/2"><i class="fa fa-chevron-right"></i></a>
+			<a id="paginatorLastButtonEntry" class="ubutton uicon btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-step-forward" href="/admin/event/search/page/1884"><i class="fa fa-step-forward"></i></a>
+		</span> 
+	</div>
+</div>
+
+<!-- END PAGINATION CONTROL -->
+
+</div>
+
+<!-- END SEARCH PAGINATOR -->
+
+<!-- START TABLE -->
+  
+<div class="table-box">
+  <table class="table bordered event-list object-list table-box-events">
+  	<thead>
+  		<tr>
+  			<th>Event Name</th>
+		    <th>Location</th>
+		    <th>Date</th>
+		    <th>Org</th>
+		    <th>Status</th>
+		    <th>#</th>
+    	</tr>
+    </thead>
+    <tbody>
+    	<tr class="">
+    		<td>
+    			<img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/13232.jpg?152040416">
+    			<a id="eventLinkDigitalMediaPhotoUploadingTestEvent" href="event-overview.html">2017 Miami Marathon and Half Marathon</a>
+  			</td>
+  			<td>Evansville, IN</td>
+  			<td>12/12/2050 9:00 AM</td>
+  			<td>Brandon Campbell Events</td>
+  			<td>
+        	Online:
+      		Open<br>
+    			Onsite:
+      		Open<br>
+      	</td>
+  			<td>32</td>
+			</tr>
+			<tr class="">
+				<td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/10032.jpg?2064457864"><a id="eventLinkCHRONOTRACKINTERNALTESTINGDONOTTOUCH" href="/admin/event/index/eventID/10032">CHRONOTRACK INTERNAL TESTING - DO NOT TOUCH</a>
+  </td>
+  <td>Portland, OR</td>
+  <td>01/01/2030 1:00 PM</td>
+  <td>Seamus Racing</td>
+  <td>
+        Online:
+      Open<br>
+    Onsite:
+      Open<br></td>
+  <td>0</td>
+</tr><tr><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/12948.jpg?602958459"><a id="eventLinkBrandonsTestEvent" href="/admin/event/index/eventID/12948">Brandon's Test Event</a>
+  </td>
+  <td>Evansville, IN</td>
+  <td>12/31/2021 9:00 AM</td>
+  <td>Brandon Campbell Events</td>
+  <td>
+        Online:
+      Open<br>
+    Onsite:
+      Open<br></td>
+  <td>306</td>
+</tr><tr class=""><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/1216.jpg?631962536"><a id="eventLinkPubRun" href="/admin/event/index/eventID/1216">Pub Run</a>
+  </td>
+  <td>Anchorage, AK</td>
+  <td>12/31/2020 12:00 AM</td>
+  <td>Skinny Raven Sports</td>
+  <td>
+        Online:
+      Open<br>
+    Onsite:
+      Open<br></td>
+  <td>10,621</td>
+</tr><tr class=""><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/14785.jpg?1451703846"><a id="eventLinkMediaFlingr" href="/admin/event/index/eventID/14785">Media Flingr</a>
+  </td>
+  <td>Phoenix, AZ</td>
+  <td>10/11/2020 8:00 AM</td>
+  <td>Courtney A CT Event</td>
+  <td>
+        Online:
+      Closed<br>
+    Onsite:
+      Open<br></td>
+  <td>12,718</td>
+</tr><tr class=""><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/3874.png?1460044258"><a id="eventLinkKelliesTryingThingsOut2" href="/admin/event/index/eventID/3874">Kellie's Trying Things Out 2</a>
+  </td>
+  <td>Sacramento, CA</td>
+  <td>09/12/2020 7:00 AM</td>
+  <td>Kellie's Trying Things Out 2</td>
+  <td>
+        Online:
+      Open<br>
+    Onsite:
+      Open<br></td>
+  <td>33</td>
+</tr><tr class=""><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/4899.jpg?1299395725"><a id="eventLinkOnsiteServerTesting2" href="/admin/event/index/eventID/4899">On-site Server Testing2</a>
+  </td>
+  <td>Boulder, CO</td>
+  <td>07/17/2020 7:00 AM</td>
+  <td>Seamus Racing</td>
+  <td>
+        Online:
+      Open<br>
+    Onsite:
+      Open<br></td>
+  <td>13</td>
+</tr><tr class=""><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/15569.jpg?653833056"><a id="eventLinkRedClayTest" href="/admin/event/index/eventID/15569">Red Clay Test</a>
+  </td>
+  <td>Evansville, IN</td>
+  <td>07/01/2020 10:00 AM</td>
+  <td>Red Clay Timing</td>
+  <td>
+        Online:
+      Closed<br>
+    Onsite:
+      Open<br></td>
+  <td>0</td>
+</tr><tr class=""><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/13702.jpg?544714318"><a id="eventLinkDiegoBorjaTorraTestEvent" href="/admin/event/index/eventID/13702">Diego Borja Torra Test Event</a>
+  </td>
+  <td>Q, Mexico</td>
+  <td>04/01/2020 10:00 AM</td>
+  <td>Diego Borja Torra</td>
+  <td>
+        Online:
+      Closed<br>
+    Onsite:
+      Closed<br></td>
+  <td>0</td>
+</tr><tr><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/12995.jpg?858574185"><a id="eventLinkAndersonTest" href="/admin/event/index/eventID/12995">Anderson Test</a>
+  </td>
+  <td>Evansville, IN</td>
+  <td>04/01/2020 10:00 AM</td>
+  <td>Chronotrack - Dan</td>
+  <td>
+        Online:
+      Closed<br>
+    Onsite:
+      Closed<br></td>
+  <td>302</td>
+</tr><tr><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/980.jpg?298457347"><a id="eventLinkSETest" href="/admin/event/index/eventID/980">SE Test</a>
+  </td>
+  <td>Schenectady, NY</td>
+  <td>03/13/2020 10:00 AM</td>
+  <td>Seamus Racing</td>
+  <td>
+        Online:
+      Open<br>
+    Onsite:
+      Open<br></td>
+  <td>38</td>
+</tr><tr><td>
+    <img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/4173.jpg?577780325"><a id="eventLinkOnsiteServerTest" href="/admin/event/index/eventID/4173">On-site Server Test</a>
+  </td>
+  <td>Evansville, IN</td>
+  <td>01/01/2020 12:00 PM</td>
+  <td>ChronoTrack Systems</td>
+  <td>
+        Online:
+      Open<br>
+    Onsite:
+      Open<br></td>
+  <td>57</td>
+</tr></tbody></table>
+
+</div>
+
+<!-- END TABLE -->
+
+</div>
+</div>
+<div class="dialogform"></div>
+</div>
+</div>
+
+<div id="footer" class="block">
+	<p class="pull-left">©2009-2018 ChronoTrack.  All rights reserved.</p>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<div class="overlay" id="overlay2"></div>
+<div class="overlay" id="upload-progress"></div>
+<script type="text/javascript" src="https://d1wtzsjnbruk95.cloudfront.net/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="https://d1wtzsjnbruk95.cloudfront.net/js/jquery.metadata.js"></script>
+<script type="text/javascript" src="https://d1wtzsjnbruk95.cloudfront.net/js/jquery.tmpl.min.js"></script>
+<!--<script type="text/javascript" src="js/materialize.min.js"></script>-->
+<script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/admin.js"></script>
+<script type="text/javascript" src="assets/js/q.js"></script>
+<script type="text/javascript" src="assets/js/payment-processor.js"></script>
+<script type="text/javascript">
+		//<!--
+$.paymentProcessor.init(Q, 'stripe', 'production', '{"production":"pk_live_WStEO0vbqak6lV58coC2OG9U","test":"pk_test_BSq54K42puyHW4x3xJzuyhXI"}');    //-->
+</script>
+
+<!--<script type="text/javascript" src="assets/js/Gettext.js"></script>-->
+
+<script type="text/javascript">
+		//<!--
+		var gt = new Gettext({ domain : 'js'});    //-->
+</script>
+
+<script type="text/javascript">
+		//<!--
+		var amTranslate = decodeURIComponent('AM'.replace("+"," "));
+		var pmTranslate = decodeURIComponent("PM".replace("+"," "));       //-->
+</script>
+
+<script type="text/javascript" src="assets/js/i18n.js"></script><script type="text/javascript">
+		//<!--
+$(function(){
+			$("#nav ul.menu").flexMenu({linkText: "More &#x25BC;", linkTitle: "View More", ulFlexCss: "overflow: visible;"});
+			});    //-->
+</script>
+
+<script type="text/javascript" src="assets/js/admin.js?1469484607"></script><script type="text/javascript">
+		//<!--
+hs.graphicsDir = '/img/highslide/graphics/';hs.showCredits=false;    //-->
+</script>
+
+</body></html>

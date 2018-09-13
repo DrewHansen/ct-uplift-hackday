@@ -27,6 +27,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
+.info-table, .container .info-table {
+	margin-top: 20px;
+}
+
 /* HEADER */
 
 #admin-bar{
@@ -369,6 +373,11 @@ body.module-admin{
 
 .info-table th{
 	padding-left: 0px;
+	font-family: proximaSemi;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: .5px;
+	color: #9b9b9b;
 }
 
 .module-admin #page #content{

@@ -525,6 +525,26 @@ body.module-admin{
 	margin-bottom: 40px;
 }
 
+/* Alerts */
+
+.bz-btn-warning{
+	background-color: #F97A2D;
+	background-image: none;
+}
+
+.bz-btn-warning:hover{
+	background-color: #e97025;
+}
+
+.alert{
+	background-color: #FFFFFF;
+	color: #9b9b9b;
+}
+
+.eventNotification{
+	margin-top: 0px;
+}
+
 /* Buttons */
 .btn{
 	display: inline-block;
@@ -608,19 +628,19 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff!important;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  color: #4a4a4a!important;
+  background-color: #F8F9FD;
+  border-color: rgb(218, 222, 236);
 }
 
 .race-list .btn-secondary{
-	color: #FFF !important;
+	color: #4a4a4a !important;
 }
 
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5a6268;
-  border-color: #545b62;
+  background-color: #ecedf3;
+  border-color: rgb(218, 222, 236);
 }
 
 .btn-secondary:focus, .btn-secondary.focus {

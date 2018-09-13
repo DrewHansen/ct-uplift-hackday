@@ -25,7 +25,122 @@ html{
 body {
 	font-family: proximaNova;
 	padding-top: 61px;
-	color: red !important;
+}
+
+/* HEADER */
+
+#admin-bar{
+	padding: 0px;
+	background: #F5F5F5;
+	height: 61px;
+}
+
+#admin-bar .brand img{
+	width: 100px;
+	vertical-align: middle;
+}
+
+#admin-bar #logo{
+	margin-right: 0px;
+	width: inherit;
+}
+
+#admin-bar a{
+	padding: 0px 10px;
+	color: #ffffff!important;
+	height: 100%;
+	line-height: 61px;
+	border-radius: 0px;
+	font-weight: 200;
+}
+
+#admin-bar .dropdown-menu a {
+	color: #4a4a4a !important;
+}
+
+#admin-bar .dropdown-menu a:hover {
+	background-color: rgba(0, 0, 0, 0.075) !important;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	height: 100%;
+	border-bottom-width: 0px;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.35);
+}
+
+@media (max-width: 979px) {
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+			padding: 0px;
+	}
+}
+
+@media (max-width: 768px){
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	    padding: 0px 20px;
+	}
+}
+
+.navbar .btn-navbar{
+	background-color: transparent;
+	background-image: none;
+}
+
+#admin-bar .navbar a.brand{
+	color: #ffffff!important;
+	height: 100%;
+	padding: 0px 10px;
+	line-height: 61px;
+	border-radius: 0px;
+}
+
+#admin-bar .navbar a.brand:hover{
+	background-color: rgba(255, 255, 255, .1)!important;
+	box-shadow: none;
+}
+
+
+
+#admin-bar .navbar a.brand:first-child:hover{
+	background-color: none;
+}
+
+.dropdown-toggle{
+	/*color: #107fa9!important;*/
+	line-height: 40px;
+	height: 40px;
+	font-weight: normal;
+	padding: 0px 10px;
+}
+
+#admin-bar .open .dropdown-toggle, .controller-report .ui-layout-north .open .dropdown-toggle{
+	background-color: rgba(255, 255, 255, .1) !important;
+	box-shadow: none;
+}
+
+.dropdown-toggle.language img{
+	margin-right: 5px;
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
+	background-image: none;
+}
+
+#admin-bar a:hover, #admin-bar a:focus{
+	background-color: rgba(255, 255, 255, .1)!important;
+	box-shadow: none;
+}
+
+#admin-bar ul.nav li{
+	top: 0px;
+	height: 100%;
+}
+
+.nav-collapse.collapse, .nav-collapse .open .dropdown-menu{
+	overflow: auto;
+}
+
+.navbar .nav{
+	height: 100%;
 }
 
 body.module-admin{
@@ -90,115 +205,6 @@ body.module-admin{
 .card-header .col-card-button button:hover{
 	background-color: transparent;
 	color: #1976D2;
-}
-
-#admin-bar{
-	padding: 0px;
-	background: #F5F5F5;
-}
-
-#admin-bar .brand img{
-	width: 100px;
-	margin-top: 9px;
-	margin-right: 20px;
-}
-
-#admin-bar #logo{
-	margin-right: 0px;
-	width: inherit;
-}
-
-#admin-bar a{
-	padding: 0px 10px;
-}
-
-#admin-bar .dropdown-menu a {
-	color: #4a4a4a !important;
-}
-
-#admin-bar .dropdown-menu a:hover {
-	background-color: rgba(0, 0, 0, 0.075) !important;
-}
-
-.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-	padding: 0px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-bottom-width: 0px;
-	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.35);
-}
-
-@media (max-width: 979px) {
-	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-			padding: 0px;
-	}
-}
-
-@media (max-width: 768px){
-	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-	    padding: 0px 20px;
-	}
-}
-
-.navbar .btn-navbar{
-	background-color: transparent;
-	background-image: none;
-}
-
-#admin-bar .navbar a.brand{
-	color: #ffffff!important;
-	height: 40px;
-	padding: 0px 10px;
-	line-height: 40px;
-	border-radius: 0px;
-}
-
-#admin-bar .navbar a.brand:hover{
-	background-color: rgba(255, 255, 255, .1)!important;
-	box-shadow: none;
-}
-
-.dropdown-toggle{
-	/*color: #107fa9!important;*/
-	line-height: 40px;
-	height: 40px;
-	font-weight: normal;
-	padding: 0px 10px;
-}
-
-#admin-bar .open .dropdown-toggle, .controller-report .ui-layout-north .open .dropdown-toggle{
-	background-color: rgba(255, 255, 255, .1) !important;
-	box-shadow: none;
-}
-
-.dropdown-toggle.language img{
-	margin-right: 5px;
-}
-
-.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a{
-	background-image: none;
-}
-
-#admin-bar a{
-	color: #ffffff!important;
-	height: 40px;
-	padding: 0px 10px;
-	line-height: 40px;
-	border-radius: 0px;
-	font-weight: 200;
-}
-
-#admin-bar a:hover, #admin-bar a:focus{
-	background-color: rgba(255, 255, 255, .1)!important;
-	box-shadow: none;
-}
-
-#admin-bar ul.nav li{
-	top: 0px;
-}
-
-.nav-collapse.collapse, .nav-collapse .open .dropdown-menu{
-	overflow: auto;
 }
 
 .module-admin #title{

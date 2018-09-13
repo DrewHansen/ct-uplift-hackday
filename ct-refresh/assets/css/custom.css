@@ -3,8 +3,13 @@
   src: url(../webfonts/proxima-nova/ProximaNova.ttf);
 }
 
+@font-face {
+  font-family: proximaSemi;
+  src: url(../webfonts/proxima-nova/ProximaNovaSemibold.ttf);
+}
+
 html{
-    background-color: #F1F4F5!important;
+    background-color: #F8F9FD!important;
 }
 
 body {
@@ -16,6 +21,10 @@ h3 {
 	font-family: proximaNova;
 	font-weight: normal;
 	color: #4a4a4a;
+}
+
+.row-fluid {
+	margin-bottom: 20px;
 }
 
 /* HEADER */
@@ -143,7 +152,7 @@ h3 {
 }
 
 body.module-admin{
-	background: #F1F4F5;
+	background: #F8F9FD;
 }
 
 .help-expand{
@@ -155,7 +164,7 @@ body.module-admin{
 .module-admin #title{
     margin: 0px auto 10px 0;
 	border-radius: 0px!important;
-	background-color: #F1F4F5;
+	background-color: #F8F9FD;
 	box-shadow: none;
 }
 
@@ -167,6 +176,7 @@ body.module-admin{
     height: 70px!important;
 		border-radius: 0px!important;
 		border-width: 1px solid red !important;
+		padding-right: 10px;
 }
 
 .module-admin #title h1{
@@ -220,14 +230,16 @@ body.module-admin{
 .module-admin #main{
 	margin-top: 0px!important;
 	width: 100%;
+	background-color: rgb(223, 225, 233);
 }
 
 .module-admin #nav{
-    width: 100%
+	width: 100%;
+	box-shadow: 0 3px 4px 0 rgba(0,0,0,0.10);
 }
 
 #nav .main-nav ul.menu{
-	background-color: #2C314E;
+	background-color: transparent;
 	height: 50px;
 	box-shadow: none;
 	padding-left: 10px;
@@ -238,6 +250,7 @@ body.module-admin{
 	height: 46px;
 	overflow: hidden;
 	white-space: nowrap;
+	background-color: #F8F9FD;
 }
 
 #main .main-nav li{
@@ -249,34 +262,40 @@ body.module-admin{
 
 #main .main-nav li a{
 	background-color: transparent;
-	color: rgba(255, 255, 255, .6);
+	color: #9b9b9b;
 	line-height: 25px;
-	font-family: proximaNova;
+	font-family: proximaSemi;
 	font-size: 14px;
 	font-weight: bold !important;
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
+	letter-spacing: .5px;
 }
 
 #main .main-nav li a:hover{
 	background-color: transparent!important;
+	color: #16A9E1;
 }
 
 #main .main-nav li.nav-tab.active a:hover{
-	background-color: #16A9E1!important;
+	background-color: transparent;
 }
 
 .module-admin #main .main-nav li.active a, .module-admin #main .main-nav li.active a:hover{
-	background-color: #16A9E1;
-	color: #FFFFFF;
+	background-color: transparent;
+	color: #16A9E1;
 }
 
 .module-admin #main .sub-nav{
-	background-color: #16A9E1;
+	background-color: transparent;
 	border-radius: 0px;
 	box-shadow: none;
 	overflow: hidden;
 	white-space: nowrap;
+	margin-top: 5px;
+}
+
+#main .sub-nav ul {
+	padding-left: 10px;
 }
 
 .module-admin #main .sub-nav li.nav-tab.active{
@@ -296,20 +315,22 @@ body.module-admin{
 }
 
 .module-admin #main .sub-nav li.nav-tab a span, .module-admin #main .sub-nav li.flexMenu-viewMore a span{
-	color: #FFFFFF;
+	color: #9b9b9b;
 	font-size: 12px;
+	font-family: proximaSemi;
+	letter-spacing: .5px;
 }
 
 .module-admin #main .sub-nav li.nav-tab a span:hover{
-	color: #EEEEEE;
+	color: #2C314E;
 }
 
 .module-admin #main .sub-nav li a{
-	background-color: transparent;
-	color: #FFFFFF;
 	font-family: proximaNova;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: .5px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .module-admin #main .sub-nav li.active a, .module-admin #main .sub-nav li.active a:hover{
@@ -321,18 +342,19 @@ body.module-admin{
 	cursor: default;
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
+
 }
 
 .module-admin #main .sub-nav li.active a span, .module-admin #main .sub-nav li.active a:hover span{
 	color: #4a4a4a;
 	font-size: 12px;
-	font-family: proximaNova;
+	font-family: proximaSemi;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: .5px;
 }
 
 .module-admin #page #content{
-	background-color: #F1F4F5;
+	background-color: #F8F9FD;
 	border-radius: 0px;
 	padding: 15px;
 	margin-top: 0px;

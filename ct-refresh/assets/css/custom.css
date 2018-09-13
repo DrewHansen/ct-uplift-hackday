@@ -38,6 +38,7 @@ body {
 #admin-bar .brand img{
 	width: 100px;
 	vertical-align: middle;
+	margin-right: 20px;
 }
 
 #admin-bar #logo{

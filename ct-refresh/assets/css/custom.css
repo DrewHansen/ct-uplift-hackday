@@ -56,6 +56,7 @@ body {
 
 #admin-bar .dropdown-menu a {
 	color: #4a4a4a !important;
+	line-height: 35px;
 }
 
 #admin-bar .dropdown-menu a:hover {
@@ -93,23 +94,27 @@ body {
 	border-radius: 0px;
 }
 
-#admin-bar .navbar a.brand:hover{
+#admin-bar a:hover, #admin-bar a:focus{
+	background-color: transparent !important;
+	box-shadow: none;
+}
+
+#admin-bar .navbar .nav a.brand:hover{
 	background-color: rgba(255, 255, 255, .1)!important;
 	box-shadow: none;
 }
 
-
-
-#admin-bar .navbar a.brand:first-child:hover{
-	background-color: none;
-}
-
-.dropdown-toggle{
+#admin-bar .dropdown-toggle{
 	/*color: #107fa9!important;*/
-	line-height: 40px;
-	height: 40px;
+	line-height: 61px;
+	height: 100%;
 	font-weight: normal;
 	padding: 0px 10px;
+}
+
+#admin-bar .dropdown-toggle:hover{
+	background-color: rgba(255, 255, 255, .1)!important;
+	box-shadow: none;
 }
 
 #admin-bar .open .dropdown-toggle, .controller-report .ui-layout-north .open .dropdown-toggle{
@@ -125,10 +130,7 @@ body {
 	background-image: none;
 }
 
-#admin-bar a:hover, #admin-bar a:focus{
-	background-color: rgba(255, 255, 255, .1)!important;
-	box-shadow: none;
-}
+
 
 #admin-bar ul.nav li{
 	top: 0px;

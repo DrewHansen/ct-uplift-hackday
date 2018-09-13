@@ -278,13 +278,13 @@ body.module-admin{
 }
 
 .module-admin #main .main-nav{
-	height: 50px;
+	height: 46px;
 	overflow: hidden;
 	white-space: nowrap;
 }
 
 #main .main-nav li{
-	height: 50px;
+	height: 46px;
 	padding-top: 5px;
 	padding-bottom: 0px;
 }
@@ -302,6 +302,10 @@ body.module-admin{
 
 #main .main-nav li a:hover{
 	background-color: transparent!important;
+}
+
+#main .main-nav li.nav-tab.active a:hover{
+	background-color: #16A9E1!important;
 }
 
 .module-admin #main .main-nav li.active a, .module-admin #main .main-nav li.active a:hover{

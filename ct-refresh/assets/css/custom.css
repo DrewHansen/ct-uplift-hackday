@@ -27,6 +27,7 @@ body {
 	padding-top: 61px;
 }
 
+
 /* HEADER */
 
 #admin-bar{
@@ -212,20 +213,31 @@ body.module-admin{
 
 .module-admin .event-info img{
     height: 70px!important;
-    border-radius: 0px!important;
+		border-radius: 0px!important;
+		border-width: 1px solid red !important;
 }
 
 .module-admin #title h1{
-    color: #011328;
-    font-size: 20px;
+		color: #4a4a4a;
+		font-family: proximaSemi;
+		font-size: 24px;
+		line-height: 29px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
 
-.module-admin #title h2, .module-admin #title h3.event-id{
-    color: #107fa9;
-    font-size: 14px
+.module-admin #title h2{
+		color: #9b9b9b;
+		font-family: proximaNova;
+    font-size: 12px;
+}
+
+.module-admin #title h3.event-id {
+	color: #005874;
+	font-family: proximaNova;
+	font-size: 14px;
+	margin-top: 5px;
 }
 
 .alert.recalc-status{

@@ -147,42 +147,6 @@ body.module-admin{
 	clear: both;
 }
 
-.card .card-content p{
-	margin-bottom: 10px;
-	font-size: 12px;
-}
-
-.card{
-	margin-bottom: 25px;
-}
-
-.card .card-content .description-label{
-	margin-bottom: 5px;
-}
-
-.card-header:after{
-	clear: both;
-	display: table;
-  content: " ";
-}
-
-.card .card-content .card-title{
-	line-height: 35px;
-}
-
-.card .card-header{
-	line-height: 35px;
-  margin-bottom: 20px;
-}
-
-.card-header .col-card-title{
-	position: relative;
-	text-align: left;
-	width: 50%;
-	float:left;
-	min-height: 1px;
-}
-
 .module-admin #title{
     margin: 0px auto 10px 0;
 	border-radius: 0px!important;
@@ -307,37 +271,60 @@ body.module-admin{
 	white-space: nowrap;
 }
 
+.module-admin #main .sub-nav li.nav-tab.active{
+	padding-top: 5px;
+}
+
+.module-admin #main .sub-nav li.nav-tab{
+	height: 45px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	line-height: 49px;
+}
+
+.module-admin #main .sub-nav li.nav-tab a:hover{
+	background-color: transparent;
+	color: #EEEEEE;
+}
+
 .module-admin #main .sub-nav li.nav-tab a span, .module-admin #main .sub-nav li.flexMenu-viewMore a span{
-	color: #9098a4;
-	font-size: 12px;
-}
-
-.module-admin #main .sub-nav li.active a, .module-admin #main .sub-nav li.active a:hover{
-	background-color: transparent!important;
-}
-
-.module-admin #main .sub-nav li.active a span, .module-admin #main .sub-nav li.active a:hover span{
 	color: #FFFFFF;
 	font-size: 12px;
-	font-family: proximaNova;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+}
+
+.module-admin #main .sub-nav li.nav-tab a span:hover{
+	color: #EEEEEE;
 }
 
 .module-admin #main .sub-nav li a{
-	background-color: transparent!important;
-	color: #67717E;
+	background-color: transparent;
+	color: #FFFFFF;
 	font-family: proximaNova;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
-#main .sub-nav li.nav-tab a span:hover{
-    color: #FFFFFF!important;
+.module-admin #main .sub-nav li.active a, .module-admin #main .sub-nav li.active a:hover{
+	background-color: #F8F9FD;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	line-height: 56px;
+	height: 42px;
+	cursor: default;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.module-admin #main .sub-nav li.active a span, .module-admin #main .sub-nav li.active a:hover span{
+	color: #4a4a4a;
+	font-size: 12px;
+	font-family: proximaNova;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 
 .module-admin #page #content{
-	background-color: #F8F9FD;
+	background-color: #F1F4F5;
 	border-radius: 0px;
 	padding: 15px;
 	margin-top: 0px;

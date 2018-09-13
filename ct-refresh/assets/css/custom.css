@@ -282,9 +282,11 @@ body.module-admin{
 }
 
 #nav .main-nav ul.menu{
-	background-color: #354253;
+	background-color: #2C314E;
 	height: 50px;
 	box-shadow: none;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .module-admin #main .main-nav{
@@ -295,15 +297,19 @@ body.module-admin{
 
 #main .main-nav li{
 	height: 50px;
+	padding-top: 5px;
+	padding-bottom: 0px;
 }
 
 #main .main-nav li a{
 	background-color: transparent;
-	color: #9098a4;
-	line-height: 31px;
-	font-family: proximaNova, sans-serif;
+	color: rgba(255, 255, 255, .6);
+	line-height: 25px;
+	font-family: proximaBold;
+	font-size: 12px;
+	font-weight: normal !important;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 1.5px;
 }
 
 #main .main-nav li a:hover{
@@ -311,8 +317,7 @@ body.module-admin{
 }
 
 .module-admin #main .main-nav li.active a, .module-admin #main .main-nav li.active a:hover{
-	background-color: transparent;
-	border-bottom: 3px solid #16A9E1;
+	background-color: #16A9E1;
 	color: #FFFFFF;
 }
 
@@ -354,7 +359,7 @@ body.module-admin{
 }
 
 .module-admin #page #content{
-	background-color: #f7fcff;
+	background-color: #F8F9FD;
 	border-radius: 0px;
 	padding: 15px;
 	margin-top: 0px;

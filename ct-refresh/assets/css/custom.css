@@ -25,6 +25,7 @@ html{
 body {
 	font-family: proximaNova;
 	padding-top: 61px;
+	color: red !important;
 }
 
 body.module-admin{

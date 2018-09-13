@@ -355,6 +355,22 @@ body.module-admin{
 	letter-spacing: .5px;
 }
 
+/* Card */
+
+.card{
+	padding: 20px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+/*Tables */
+
+.info-table th{
+	padding-left: 0px;
+}
+
 .module-admin #page #content{
 	background-color: #F8F9FD;
 	border-radius: 0px;
@@ -594,9 +610,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
+  color: #fff!important;
   background-color: #6c757d;
   border-color: #6c757d;
+}
+
+.race-list .btn-secondary{
+	color: #FFF !important;
 }
 
 .btn-secondary:hover {
@@ -1147,13 +1167,6 @@ fieldset:disabled a.btn {
 
 .btn-block + .btn-block {
   margin-top: 0.5rem;
-}
-
-a.btn{
-	background-color: #F5F5F5;
-}
-a.btn.blue, a.btn.blue i, button.btn.blue, button.btn.blue i{
-	color: #FFFFFF!important;
 }
 
 .btn-group.open .dropdown-toggle{

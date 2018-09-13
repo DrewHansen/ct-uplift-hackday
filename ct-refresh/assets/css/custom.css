@@ -27,6 +27,10 @@ h3 {
 	margin-bottom: 20px;
 }
 
+.info-table, .container .info-table {
+	margin-top: 20px;
+}
+
 /* HEADER */
 
 #admin-bar{
@@ -230,7 +234,7 @@ body.module-admin{
 .module-admin #main{
 	margin-top: 0px!important;
 	width: 100%;
-	background-color: rgb(223, 225, 233);
+	background-color: rgb(218, 222, 236);
 }
 
 .module-admin #nav{
@@ -255,9 +259,8 @@ body.module-admin{
 
 #main .main-nav li{
 	height: 46px;
-	padding-top: 5px;
 	padding-bottom: 0px;
-	margin-right: 20px;
+	padding-top: 2px;
 }
 
 #main .main-nav li a{
@@ -265,10 +268,12 @@ body.module-admin{
 	color: #9b9b9b;
 	line-height: 25px;
 	font-family: proximaSemi;
-	font-size: 14px;
+	font-size: 14	px;
 	font-weight: bold !important;
 	text-transform: uppercase;
 	letter-spacing: .5px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 #main .main-nav li a:hover{
@@ -283,6 +288,7 @@ body.module-admin{
 .module-admin #main .main-nav li.active a, .module-admin #main .main-nav li.active a:hover{
 	background-color: transparent;
 	color: #16A9E1;
+	border-bottom: 3px solid #16A9E1;
 }
 
 .module-admin #main .sub-nav{
@@ -367,6 +373,11 @@ body.module-admin{
 
 .info-table th{
 	padding-left: 0px;
+	font-family: proximaSemi;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: .5px;
+	color: #9b9b9b;
 }
 
 .module-admin #page #content{

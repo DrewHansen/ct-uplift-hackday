@@ -3,28 +3,13 @@
   src: url(../webfonts/proxima-nova/ProximaNova.ttf);
 }
 
-@font-face {
-	font-family: proximaBold;
-	src: url(../webfonts/proxima-nova/ProximaNovaBold.ttf);
-}
-
-@font-face {
-	font-family: proximaLight;
-	src: url(../webfonts/proxima-nova/ProximaNovaLight.ttf);
-}
-
-@font-face {
-	font-family: proximaSemi;
-	src: url(../webfonts/proxima-nova/ProximaNovaSemibold.ttf);
-}
-
 html{
     background-color: #F1F4F5!important;
 }
 
 body {
 	font-family: proximaNova;
-	padding-top: 61px;
+	padding-top: 75px;
 }
 
 
@@ -139,8 +124,6 @@ body {
 	background-image: none;
 }
 
-
-
 #admin-bar ul.nav li{
 	top: 0px;
 	height: 100%;
@@ -219,8 +202,9 @@ body.module-admin{
 
 .module-admin #title h1{
 		color: #4a4a4a;
-		font-family: proximaSemi;
+		font-family: proximaNova;
 		font-size: 24px;
+		font-weight: 600;
 		line-height: 29px;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -230,12 +214,14 @@ body.module-admin{
 .module-admin #title h2{
 		color: #9b9b9b;
 		font-family: proximaNova;
-    font-size: 12px;
+		font-size: 12px;
+		font-weight: normal;
 }
 
 .module-admin #title h3.event-id {
 	color: #005874;
 	font-family: proximaNova;
+	font-weight: bold;
 	font-size: 14px;
 	margin-top: 5px;
 }
@@ -278,7 +264,7 @@ body.module-admin{
 }
 
 .module-admin #main .main-nav{
-	height: 50px;
+	height: 46px;
 	overflow: hidden;
 	white-space: nowrap;
 }
@@ -293,9 +279,9 @@ body.module-admin{
 	background-color: transparent;
 	color: rgba(255, 255, 255, .6);
 	line-height: 25px;
-	font-family: proximaBold;
-	font-size: 12px;
-	font-weight: normal !important;
+	font-family: proximaNova;
+	font-size: 14px;
+	font-weight: bold !important;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 }
@@ -310,7 +296,7 @@ body.module-admin{
 }
 
 .module-admin #main .sub-nav{
-	background-color: #354253;
+	background-color: #16A9E1;
 	border-radius: 0px;
 	box-shadow: none;
 	overflow: hidden;

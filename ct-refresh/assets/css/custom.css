@@ -24,7 +24,8 @@ html{
 
 body {
 	font-family: proximaNova;
-	padding-top: 61px;
+	padding-top: 75px;
+	background-color: #F8F9FD;
 }
 
 /* HEADER */
@@ -57,6 +58,7 @@ body {
 
 #admin-bar .dropdown-menu a {
 	color: #4a4a4a !important;
+	line-height: 35px;
 }
 
 #admin-bar .dropdown-menu a:hover {

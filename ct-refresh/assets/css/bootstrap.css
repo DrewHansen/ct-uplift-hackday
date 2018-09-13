@@ -3146,7 +3146,7 @@ button.close {
   -webkit-appearance: none;
 }
 
-/*.btn {
+.btn {
   display: inline-block;
   *display: inline;
   padding: 4px 12px;
@@ -3335,7 +3335,7 @@ input[type="button"].btn-block {
 .btn-primary[disabled] {
   color: #ffffff;
   background-color: #0044cc;
-  *background-color: #003bb3;
+  background-color: #003bb3;
 }
 
 .btn-primary:active,
@@ -3561,7 +3561,7 @@ input[type="submit"].btn.btn-mini {
 .btn-link[disabled]:hover {
   color: #333333;
   text-decoration: none;
-}*/
+}
 
 .btn-group {
   position: relative;

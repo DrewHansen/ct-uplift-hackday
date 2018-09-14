@@ -1251,6 +1251,10 @@ fieldset:disabled a.btn {
 	float: right;
 }
 
+#content #create-event-btn {
+	float: right;
+}
+
 #create-event-btn:hover {
   color: #fff;
   background-color: #ecedf3;

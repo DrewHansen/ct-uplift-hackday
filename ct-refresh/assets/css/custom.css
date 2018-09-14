@@ -1315,23 +1315,36 @@ fieldset:disabled a.btn {
 	}
 }
 
-form.event-search .control-group.fr-q, form.event-search .control-group.fr-status, form.event-search .control-group.fr-organizer_id{
+form.event-search .control-group.fr-q{
 	display: block;
-	width: 23.076923076923077%;
+	width: 39%;
+	float: left;
+}
+
+form.event-search .control-group.fr-status{
+	display: block;
+	width: 19%;
+	float: left;
+}
+
+form.event-search .control-group.fr-organizer_id{
+	display: block;
+	width: 19%;
 	float: left;
 }
 
 form.event-search .control-group.fr-status, form.event-search .control-group.fr-organizer_id{
-	margin-left: 20px;
+	margin-left: 1%;
 }
 
 #fieldset-Search #submitsearch{
 	position: relative;
 	float: none!important;
 	bottom: initial;
-	margin-left: 20px;
 	margin-top: 25px;
 	padding: 6px 30px;
+	width: 20%;
+	margin-left: 1%;
 }
 
 @media (max-width: 767px) {

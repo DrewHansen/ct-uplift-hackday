@@ -31,13 +31,73 @@
 <!-- START APP NAV -->
 
 <div id="admin-bar">
+	<div class="navbar navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+				<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				<a id="logo" href="/admin/event/search"><span>admin</span></a>
+				<a href="/admin/event/search" class="brand btn-primary">My Events</a>
+				<a id="myAccount" no-context="1" data-activity="/admin/account" href="/admin/account/search" class="brand btn-primary">My Users</a>
+				<a id="myOrgs" no-context="1" data-activity="/admin/organization/athletes" href="/admin/organization/athletes" class="brand btn-primary">My Orgs</a>
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav pull-right">
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">Downloads <b class="caret"></b></a>
+							<ul class="dropdown-menu"><li><a target="_blank" href="/launch">Launch</a></li>
+								<li><a class="popup" href="/admin/event-video/download-media-manager">Media Manager</a></li>
+								<li><a target="_blank" href="http://secure.chronotrack.com">Timing Software</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">Help <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a target="_blank" href="https://chronotrack.com/release-note-category/ctlive/">CTLive Release Notes</a></li>
+								<li><a target="_blank" href="http://director.chronotrack.com">Registration Knowledge Base</a></li>
+								<li><a target="_blank" href="http://knowledge.chronotrack.com">Scoring Knowledge Base</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#"><img class="gravatar" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=16&amp;d=mm&amp;r=g">Moon Links <b id="profile-caret" class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a id="editProfile" target="_blank" href="/user/profile/edit">Edit Profile</a></li>
+								<li><a id="accountSettings" href="/admin/account/settings" class="popup">Account Settings</a></li>
+								<li><a id="signOut" href="/www/auth/sign-out?m=admin">Sign Out</a></li>
+								<li class="divider"></li>
+								<li>
+									<div class="user-info" style="margin-bottom: 0px;">
+										<div class="row-fluid">
+											<div class="span4">
+												<img class="big-gravatar" style="float:left" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=80&amp;d=mm&amp;r=g">
+											</div>
+											<div class="span8">
+												Moon Links<br>
+												dmoon@lifetimefitness.com<br>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!--
+<div id="admin-bar">
 	<div class="navbar navbar-fixed-top">
 	  <div class="navbar-inner">
 	    <div>
 	      <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 	        <i class="fa fa-bars"></i>
-	      </a>
-	      <a class="brand" href="#"><img src="assets/img/navbar-logo.png"></a>
+				</a>
+				<a id="logo" href="/admin/event/search"><span>admin</span></a>
 	      <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
 	        <ul class="nav">
 	          <li><a href="index.html" class="brand btn-primary">My Events</a></li>
@@ -100,11 +160,11 @@
               </ul>
             </li>
           </ul>
-	      </div><!-- /.nav-collapse -->
+	      </div>
 	    </div>
-	  </div><!-- /navbar-inner -->
+	  </div>
 	</div>
-</div>
+</div>-->
 
 <!-- END APP NAV --><!-- START EVENT HEADER -->
 

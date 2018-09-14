@@ -39,19 +39,21 @@ h3 {
 	height: 61px;
 }
 
-#admin-bar .brand img{
+#admin-bar #logo{
+	background: url('../img/navbar-logo.png') left center / auto 40px no-repeat;
+	height: 61px;
+  margin-right: 20px;
+  background-size: 100px 25px;
+	padding: 0;
 	width: 100px;
-	vertical-align: middle;
-	margin-right: 20px;
 }
 
-#admin-bar #logo{
-	margin-right: 0px;
-	width: inherit;
+#admin-bar #logo span{
+	display: none;
 }
 
 #admin-bar a{
-	padding: 0px 10px;
+	padding: 21px 10px;
 	color: #ffffff!important;
 	height: 100%;
 	line-height: 61px;
@@ -61,11 +63,16 @@ h3 {
 
 #admin-bar .dropdown-menu a {
 	color: #4a4a4a !important;
-	line-height: 35px;
+	line-height: 0px;
 }
 
 #admin-bar .dropdown-menu a:hover {
 	background-color: rgba(0, 0, 0, 0.075) !important;
+}
+
+.navbar-inverse .navbar-inner{
+	height: 100%;
+	border-radius: 0px;
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
@@ -83,6 +90,12 @@ h3 {
 @media (max-width: 768px){
 	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
 	    padding: 0px 20px;
+	}
+}
+
+@media (max-width: 768px){
+	#admin-bar .navbar a.brand{
+		display: none;
 	}
 }
 
@@ -111,7 +124,7 @@ h3 {
 	box-shadow: none;
 }
 
-#admin-bar .navbar .nav a.brand:hover{
+#admin-bar .navbar a.brand:hover{
 	background-color: rgba(255, 255, 255, .1)!important;
 	box-shadow: none;
 }
@@ -122,6 +135,13 @@ h3 {
 	height: 100%;
 	font-weight: normal;
 	padding: 0px 10px;
+}
+
+#admin-bar .dropdown-toggle .caret{
+	vertical-align: middle;
+	margin-top: 0px;
+	border-bottom-color: #FFFFFF;
+	border-top-color: #FFFFFF;
 }
 
 #admin-bar .dropdown-toggle:hover{
@@ -145,6 +165,18 @@ h3 {
 #admin-bar ul.nav li{
 	top: 0px;
 	height: 100%;
+}
+
+.nav-collapse.collapse{
+	height: 0px;
+}
+
+#admin-bar .nav-collapse.in ul.dropdown-menu li a{
+	color: #FFF !important;
+}
+
+#admin-bar .nav-collapse.in ul.dropdown-menu li a:hover{
+	background-color: rgba(255, 255, 255, .1) !important;
 }
 
 .nav-collapse.collapse, .nav-collapse .open .dropdown-menu{
@@ -340,7 +372,7 @@ body.module-admin{
 }
 
 .module-admin #main .sub-nav li.active a, .module-admin #main .sub-nav li.active a:hover{
-	background-color: #F8F9FD;
+	background-color: #F8F9FD !important;
 	margin-bottom: 0px;
 	margin-top: 0px;
 	line-height: 56px;
@@ -554,6 +586,16 @@ body.module-admin{
 
 .eventNotification{
 	margin-top: 0px;
+}
+
+/* Footer */
+
+#footer{
+	padding: 0px 20px;
+}
+
+#footer p{
+	color: #4a4a4a;
 }
 
 /* Buttons */

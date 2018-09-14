@@ -39,13 +39,10 @@ h3 {
 	height: 61px;
 }
 
-#admin-bar #logo{
-	background: url('../img/navbar-logo.png') left center / auto 40px no-repeat;
-	height: 61px;
-  margin-right: 20px;
-  background-size: 100px 25px;
-	padding: 0;
+#admin-bar .brand img{
 	width: 100px;
+	line-height: 61px;
+	vertical-align: middle;
 }
 
 #admin-bar #logo span{
@@ -77,6 +74,8 @@ h3 {
 .navbar-inverse .navbar-inner{
 	height: 100%;
 	border-radius: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
@@ -88,18 +87,6 @@ h3 {
 @media (max-width: 979px) {
 	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
 			padding: 0px;
-	}
-}
-
-@media (max-width: 768px){
-	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
-	    padding: 0px 20px;
-	}
-}
-
-@media (max-width: 768px){
-	#admin-bar .navbar a.brand{
-		display: none;
 	}
 }
 
@@ -128,7 +115,7 @@ h3 {
 	box-shadow: none;
 }
 
-#admin-bar .navbar a.brand:hover{
+#admin-bar .navbar a.brand.btn-primary:hover{
 	background-color: rgba(255, 255, 255, .1)!important;
 	box-shadow: none;
 }
@@ -190,6 +177,20 @@ h3 {
 .navbar .nav{
 	height: 100%;
 }
+
+@media (max-width: 768px){
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+	    padding: 0px 20px;
+	}
+}
+
+@media (max-width: 768px){
+	#admin-bar .navbar a.brand.btn-primary{
+		display: none;
+	}
+}
+
+/* Module */
 
 body.module-admin{
 	background: #F8F9FD;
@@ -404,6 +405,16 @@ body.module-admin{
 	border-radius: 3px;
 	margin-bottom: 20px;
 	clear: both;
+}
+
+@media (max-width: 768px){
+
+	span6.last{
+		clear: both;
+	}
+	.span6.last .card:first-child {
+	    margin-top: 20px;
+	}
 }
 
 /*Tables */
@@ -1248,6 +1259,30 @@ fieldset:disabled a.btn {
 
 .#create-event-btn:focus, #create-event-btn.focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+@media (max-width: 768px){
+	.info-table + .btn, .info-table + .btn + .btn, .info-table + .btn + .btn + .btn{
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+		margin-right: 0px;
+		position: relative;
+		min-width: 100%;
+		max-width: 100%;
+		float: none;
+		padding: 5px 0px;
+	}
+	.info-table + .btn + .btn + .btn + .pull-left{
+		display: none;
+		float: none;
+	}
+	.icon-random, .icon-tags, .icon-pencil{
+		display: none;
+	}
+	.race-list .btn{
+		width: 85% !important;
+	}
 }
 
 /* FORM */

@@ -99,9 +99,8 @@
 <div class="container">
 
 <!-- START SEARCH PAGINATOR -->
-
+<a title="Create a new event" id="create-event-btn" href="/admin/event/create?_step=1" class="popup btn"><i class="icon-plus-sign"></i> New Event</a>
 <div class="search-paginator event-search-paginator">
-		<a title="Create a new event" id="create-event-btn" href="/admin/event/create?_step=1" class="popup btn"><i class="icon-plus-sign"></i> New Event</a>
 		<form id="search-event-form" enctype="application/x-www-form-urlencoded" action="/admin/event/search" data-title="Search 2019 Chicago Triathlon" class="form-inline form-search search event-search" method="post">
 			<fieldset id="fieldset-Search" class="">
 				<legend>My Events</legend>
@@ -168,12 +167,12 @@
 			<a id="paginatorPreviousButtonEntry" class="ubutton uicon ui-state-disabled btn" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-left" href="#">Previous<i class="icon-chevron-left  button-icon-left"></i></a>
 			<a id="paginatorNextButtonEntry" class="ubutton uicon btn" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-right" href="/admin/event/search/page/2">Next<i class="icon-chevron-right  button-icon-left"></i></a>
 			<a id="paginatorLastButtonEntry" class="ubutton uicon btn" data-padding="0.1em" data-font-size=".8em" data-icon="icon-step-forward" href="/admin/event/search/page/19">Last<i class="icon-step-forward  button-icon-left"></i></a>
-			</span> 
+			</span>
 		</div>
 	</div>
 
 <!-- START TABLE -->
-  
+
 <div class="table-box">
   <table class="table bordered event-list object-list table-box-events">
   	<thead>
@@ -351,7 +350,7 @@
 <div id="footer" class="block">
 		<p class="pull-left">©2009-2018 ChronoTrack.  All rights reserved.</p>
 	</div>
-	
+
 	<div class="overlay" id="overlay"></div>
 	<div class="overlay" id="overlay2"></div>
 	<div class="overlay" id="upload-progress"></div>
@@ -368,27 +367,27 @@
 			//<!--
 	$.paymentProcessor.init(Q, 'stripe', 'production', '{"production":"pk_live_WStEO0vbqak6lV58coC2OG9U","test":"pk_test_BSq54K42puyHW4x3xJzuyhXI"}');    //-->
 	</script>
-	
+
 	<!--<script type="text/javascript" src="assets/js/Gettext.js"></script>-->
-	
+
 	<script type="text/javascript">
 			//<!--
 			var gt = new Gettext({ domain : 'js'});    //-->
 	</script>
-	
+
 	<script type="text/javascript">
 			//<!--
 			var amTranslate = decodeURIComponent('AM'.replace("+"," "));
 			var pmTranslate = decodeURIComponent("PM".replace("+"," "));       //-->
 	</script>
-	
+
 	<script type="text/javascript" src="assets/js/i18n.js"></script><script type="text/javascript">
 			//<!--
 	$(function(){
 				$("#nav ul.menu").flexMenu({linkText: "More &#x25BC;", linkTitle: "View More", ulFlexCss: "overflow: visible;"});
 			 });    //-->
 	</script>
-	
+
 	<script type="text/javascript" src="assets/js/admin.js?1469484607"></script><script type="text/javascript">
 			//<!--
 	hs.graphicsDir = '/img/highslide/graphics/';hs.showCredits=false;    //-->

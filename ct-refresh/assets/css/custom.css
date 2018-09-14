@@ -1256,6 +1256,10 @@ fieldset:disabled a.btn {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	min-height: 25px;
+	font-family: proximaSemi;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #9b9b9b;
 }
 
 .control-group .search-query{
@@ -1331,8 +1335,9 @@ form.event-search .control-group.fr-status, form.event-search .control-group.fr-
 }
 
 input.search-query{
-	border-radius: 0px;
+	border-radius: 3px;
 	box-shadow: none;
+	background-color: #FBFBFB;
 }
 
 .chzn-container .chzn-single{
@@ -1409,28 +1414,40 @@ div.paginationControl{
 
 /* TABLE */
 
+table {
+	background-color: transparent;
+}
+
 .table-box {
 	border: none;
 	border-radius: 0px;
-	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
-	font-size: 14px;
-	background-color: #FFFFFF;
+	font-size: 16px;
 	padding-bottom: 20px;
+	background-color: transparent;
 }
 
 .table-box table .acenter{
 	text-align: left;
 }
 
-.table-box table th, .table-box table td{
+.table-box table th {
 	padding-left: 10px;
 	padding-right: 10px;
+	font-family: proximaSemi;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #9b9b9b;
+}
+.table-box table td {
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
 }
 
 .table-box .table-header{
 	line-height: 35px;
   margin-bottom: 20px;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .table-box .table-header .table-title{

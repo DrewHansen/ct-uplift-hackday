@@ -1331,7 +1331,6 @@ form.event-search .control-group.fr-status, form.event-search .control-group.fr-
 
 #fieldset-Search #submitsearch{
 	position: relative;
-	float: none!important;
 	bottom: initial;
 	margin-left: 20px;
 	margin-top: 25px;

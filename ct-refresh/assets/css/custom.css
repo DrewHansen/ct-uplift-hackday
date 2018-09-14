@@ -550,6 +550,8 @@ body.module-admin{
 .alert{
 	background-color: #FFFFFF;
 	color: #9b9b9b;
+	border: 1px solid #F97A2D;
+
 }
 
 .eventNotification{

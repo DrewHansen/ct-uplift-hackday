@@ -32,81 +32,63 @@
 <!-- START APP NAV -->
 
 <div id="admin-bar">
-	<div class="navbar navbar-fixed-top">
-	  <div class="navbar-inner">
-	    <div>
-	      <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-	        <i class="fa fa-bars"></i>
-	      </a>
-	      <a class="brand" href="#"><img src="assets/img/navbar-logo.png"></a>
-	      <div class="nav-collapse navbar-responsive-collapse collapse" style="height: 0px;">
-	        <ul class="nav">
-	          <li><a href="index.html" class="brand btn-primary">My Events</a></li>
-	          <li><a id="myAccount" no-context="1" data-activity="/admin/account" href="/admin/account/search" class="brand btn-primary">My Users</a></li>
-	          <li><a id="myOrgs" no-context="1" data-activity="/admin/organization/athletes" href="/admin/organization/athletes" class="brand btn-primary">My Orgs</a></li>
-	        </ul>
-	        <ul class="nav pull-right lang-switcher">
-          	<li class="dropdown">
-	    				<a data-toggle="dropdown" href="#" class="dropdown-toggle language" data-lang="en">
-	      				<img src="assets/img/en.png"><i class="fa fa-caret-down"></i>
-	    				</a>
-	    				<ul class="dropdown-menu lang-dropdown">
-	    					
-		    				<li class="other-lang">
-		      				<a href="#" class="set-lang" data-lang="es" title="Spanish - español">
-		            		<img src="assets/img/es.png" style="margin-right: 10px;"><span>Spanish - español</span>
-		      				</a>
-		    				</li>
-    					</ul>
-    				</li>
-					</ul>
-
-					<ul class="nav pull-right">
-						<li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-              	<img class="gravatar" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=16&amp;d=mm&amp;r=g">Dallin Moon <i class="fa fa-caret-down"></i></b>
-              </a>
-              <ul class="dropdown-menu">
-              	<li>
-              		<a id="editProfile" target="_blank" href="/user/profile/edit">Edit Profile</a>
-              	</li>
-                <li>
-                	<a id="accountSettings" href="/admin/account/settings" class="popup">Account Settings</a>
-                </li>
-                <li>
-                	<a id="signOut" href="/www/auth/sign-out?m=admin">Sign Out</a>
-                </li>
-                <li class="divider">
-                </li>
-                <li>
-                  <div class="user-info" style="margin-bottom: 0px;">
-                    <div class="row-fluid">
-                      <div class="span4">
-                        <img class="big-gravatar" style="float:left" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=80&amp;d=mm&amp;r=g"></div>
-                      <div class="span8">
-                        Dallin Moon<br>
-                        dmoon@lifetimefitness.com<br></div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav pull-right">
-          	<li class="dropdown">
-              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Help <i class="fa fa-caret-down"></i></a>
-              <ul class="dropdown-menu">
-              	<li>
-              		<a target="_blank" href="http://knowledge.chronotrack.com">ChronoTrack Live Platform Help</a>
-              	</li>
-              </ul>
-            </li>
-          </ul>
-	      </div><!-- /.nav-collapse -->
-	    </div>
-	  </div><!-- /navbar-inner -->
+		<div class="navbar navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container">
+					<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a id="logo" href="/admin/event/search"><span>admin</span></a>
+					<a href="/admin/event/search" class="brand btn-primary">My Events</a>
+					<a id="myAccount" no-context="1" data-activity="/admin/account" href="/admin/account/search" class="brand btn-primary">My Users</a>
+					<a id="myOrgs" no-context="1" data-activity="/admin/organization/athletes" href="/admin/organization/athletes" class="brand btn-primary">My Orgs</a>
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav pull-right">
+							<li class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">Downloads <b class="caret"></b></a>
+								<ul class="dropdown-menu"><li><a target="_blank" href="/launch">Launch</a></li>
+									<li><a class="popup" href="/admin/event-video/download-media-manager">Media Manager</a></li>
+									<li><a target="_blank" href="http://secure.chronotrack.com">Timing Software</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#">Help <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a target="_blank" href="https://chronotrack.com/release-note-category/ctlive/">CTLive Release Notes</a></li>
+									<li><a target="_blank" href="http://director.chronotrack.com">Registration Knowledge Base</a></li>
+									<li><a target="_blank" href="http://knowledge.chronotrack.com">Scoring Knowledge Base</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a data-toggle="dropdown" class="dropdown-toggle" href="#"><img class="gravatar" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=16&amp;d=mm&amp;r=g">Moon Links <b id="profile-caret" class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a id="editProfile" target="_blank" href="/user/profile/edit">Edit Profile</a></li>
+									<li><a id="accountSettings" href="/admin/account/settings" class="popup">Account Settings</a></li>
+									<li><a id="signOut" href="/www/auth/sign-out?m=admin">Sign Out</a></li>
+									<li class="divider"></li>
+									<li>
+										<div class="user-info" style="margin-bottom: 0px;">
+											<div class="row-fluid">
+												<div class="span4">
+													<img class="big-gravatar" style="float:left" src="https://secure.gravatar.com/avatar/2d4a84871bf303ab13de8a3e51d42b64?s=80&amp;d=mm&amp;r=g">
+												</div>
+												<div class="span8">
+													Moon Links<br>
+													dmoon@lifetimefitness.com<br>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>
 
 <!-- END APP NAV -->
 
@@ -119,59 +101,31 @@
 <!-- START SEARCH PAGINATOR -->
 
 <div class="search-paginator event-search-paginator">
-
-<!-- START NEW EVENT -->
-	
-<div class="row-fluid new-event-button">
-	<div class="span12">
-  	<a title="Create a new event" id="create-event-btn" href="/admin/event/create?_step=1" class="popup btn blue">
-  		<i class="fa fa-plus"></i> New Event
-  	</a>
-  </div>
-</div>
-
-<!-- END NEW EVENT -->
-
-<!-- START SEARCH FORM -->
-
-<form id="search-event-form" enctype="application/x-www-form-urlencoded" action="/admin/event/search" data-title="Search Colorado Sprint - Sunday, May 14th 2017" class="form-inline form-search search event-search" method="post">
-	<fieldset id="fieldset-Search" class="">
-		<legend>My Events</legend>
-		
-		<div class="dg">
-
-			<div class="row-fluid">
-				<div class="span3">
+		<a title="Create a new event" id="create-event-btn" href="/admin/event/create?_step=1" class="popup btn"><i class="icon-plus-sign"></i> New Event</a>
+		<form id="search-event-form" enctype="application/x-www-form-urlencoded" action="/admin/event/search" data-title="Search 2019 Chicago Triathlon" class="form-inline form-search search event-search" method="post">
+			<fieldset id="fieldset-Search" class="">
+				<legend>My Events</legend>
+				<div class="dg">
 					<input type="hidden" name="submitvalue" value="" id="submitvalue">
-					<div class="control-group fr-q  " id="fr-q">
-						<label for="q" class="control-label-text-left optional">Event Name or ID</label>
-						<input type="text" name="q" id="q" value="" class="search-query span3">
+					<div class="row-fluid control-group fr-q  " id="fr-q"><label for="q" class="control-label-text-left  span3 optional">Event Name or ID</label>
+						<input type="text" name="q" id="q" value="" class="span12 search-query">
 					</div>
-				</div>
-
-				<div class="span3">
-
-					<div class="control-group fr-status  " id="fr-status">
-						<label for="status" class="control-label-text-left optional">Time Frame</label>
-						<select name="status" id="status" singleerror="" class="chzn-done" style="display: none;">
-							<option value="All" label="All" selected="">All</option>
-							<option value="Recent" label="Recently Viewed">Recently Viewed</option>
-							<option value="Live" label="Live">Live</option>
-							<option value="Upcoming" label="Upcoming">Upcoming</option>
-							<option value="Past" label="Past">Past</option>
+					<div class="row-fluid control-group fr-status  " id="fr-status">
+						<label for="status" class="control-label-text-left  span3 optional">Time Frame</label>
+						<select name="status" id="status" singleerror="" class="span12 chzn-done" style="display: none;">
+							<option value="All" selected="">All</option>
+							<option value="Recent">Recently Viewed</option>
+							<option value="Live">Live</option>
+							<option value="Upcoming">Upcoming</option>
+							<option value="Past">Past</option>
 						</select>
-
-						<div id="status_chzn" class="chzn-container chzn-container-single chzn-container-single-nosearch" style="margin-left: 0px;" title="">
+						<div id="status_chzn" class="chzn-container chzn-container-single span12 chzn-container-single-nosearch" style="margin-left: 0px;" title="">
 							<a href="javascript:void(0)" class="chzn-single" tabindex="-1">
-								<span>All <i class="fa fa-caret-down"></i></span>
-								<div>
-									<b></b>
-								</div>
+								<span>All</span>
+								<div><b></b></div>
 							</a>
 							<div class="chzn-drop span12" style="left: -9000px; margin-left: 0px !important; top: 32px;">
-								<div class="chzn-search" style="padding:0px; height: 0px; overflow: hidden;">
-									<input type="text" autocomplete="off" class="">
-								</div>
+								<div class="chzn-search" style="padding:0px; height: 0px; overflow: hidden;"><input type="text" autocomplete="off" class="span12"></div>
 								<ul class="chzn-results span12">
 									<li id="status_chzn_o_0" class="active-result result-selected" style="">All</li>
 									<li id="status_chzn_o_1" class="active-result" style="">Recently Viewed</li>
@@ -182,77 +136,41 @@
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="span3">
-
-					<div class="control-group fr-organizer_id  " id="fr-organizer_id">
-						<label for="organizer_id" class="control-label-text-left optional">Organizer</label>
-						<select name="organizer_id" id="organizer_id" singleerror="" class="chzn-done" style="display: none;">
-							<option value="" label="Any Organizer" selected="">Any Organizer</option>
-							<option value="1" label="ChronoTrack - Do not use (Event)">ChronoTrack - Do not use (Event)</option>
-							<option value="2" label="ChronoTrack - Do not use (Timer)">ChronoTrack - Do not use (Timer)</option>
-							<option value="3" label="Remove-EventsOrg (Event)">Remove-EventsOrg (Event)</option>
+					<div class="row-fluid control-group fr-organizer_id  " id="fr-organizer_id">
+						<label for="organizer_id" class="control-label-text-left  span3 optional">Organizer</label>
+						<select name="organizer_id" id="organizer_id" singleerror="" class="span12 chzn-done" style="display: none;">
+							<option value="" selected="">Any Organizer</option>
+							<option value="1">ChronoTrack - Do not use (Event)</option>
 						</select>
-
-						<div id="status_chzn" class="chzn-container chzn-container-single chzn-container-single-nosearch" style="margin-left: 0px;" title="">
+						<div id="organizer_id_chzn" class="chzn-container chzn-container-single span12" style="margin-left: 0px;" title="">
 							<a href="javascript:void(0)" class="chzn-single" tabindex="-1">
-								<span>Any Organizer <i class="fa fa-caret-down"></i></span>
-								<div>
-									<b></b>
-								</div>
+								<span>Any Organizer</span>
+								<div><b></b></div>
 							</a>
 							<div class="chzn-drop span12" style="left: -9000px; margin-left: 0px !important; top: 32px;">
-								<div class="chzn-search" style="padding:0px; height: 0px; overflow: hidden;">
-									<input type="text" autocomplete="off" class="">
-								</div>
+								<div class="chzn-search  span12 " undefined=""><input type="text" autocomplete="off" class="span12"></div>
 								<ul class="chzn-results span12">
-									<li id="status_chzn_o_0" class="active-result result-selected" style="">Any Organizer</li>
+									<li id="organizer_id_chzn_o_0" class="active-result result-selected" style="">Any Organizer</li>
+									<li id="organizer_id_chzn_o_1" class="active-result" style="">ChronoTrack - Do not use (Event)</li>
+									<li id="organizer_id_chzn_o_2" class="active-result" style="">ChronoTrack - Do not use (Timer)</li>
 								</ul>
 							</div>
 						</div>
 					</div>
-
-						<input type="hidden" name="eventID" value="21694" class="eventID" id="eventID">
-
-				</div>		
-			</div>
-
-			<div class="row-fluid">
-				<div class="span12">
-					<button name="submitsearch" id="submitsearch" type="submit" class="uicon btn blue btn-primary btn-phone-block" data-icon="icon-ok-sign" data-icon-color="icon-white" style="float:right">
-						<i class="fa fa-search"></i> Search
-					</button>
+					<input type="hidden" name="eventID" value="36193" class="eventID" id="eventID"><button name="submitsearch" id="submitsearch" type="submit" class="uicon btn btn-primary" data-icon="icon-ok-sign" data-icon-color="icon-white" style="float:right">Search<i class="icon-ok-sign icon-white button-icon-left"></i></button>
 				</div>
-			</div>
-
+			</fieldset>
+		</form>
+		<div class="paginationControl">
+			<span class="row-range">1 - 12 of 219</span>
+			<span class="fright nav-buttons">
+			<a id="paginatorFirstButtonEntry" class="ubutton uicon ui-state-disabled btn" data-padding="0.1em" data-font-size=".8em" data-icon="icon-step-backward" href="#">First<i class="icon-step-backward  button-icon-left"></i></a>
+			<a id="paginatorPreviousButtonEntry" class="ubutton uicon ui-state-disabled btn" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-left" href="#">Previous<i class="icon-chevron-left  button-icon-left"></i></a>
+			<a id="paginatorNextButtonEntry" class="ubutton uicon btn" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-right" href="/admin/event/search/page/2">Next<i class="icon-chevron-right  button-icon-left"></i></a>
+			<a id="paginatorLastButtonEntry" class="ubutton uicon btn" data-padding="0.1em" data-font-size=".8em" data-icon="icon-step-forward" href="/admin/event/search/page/19">Last<i class="icon-step-forward  button-icon-left"></i></a>
+			</span> 
 		</div>
-
-	</fieldset>
-</form>
-
-<hr />
-
-<!-- END SEARCH FORM -->
-
-<!-- START PAGINATION CONTROL -->
-
-<div class="paginationControl">
-	<span class="row-range">1 - 12 of 22,604</span>
-		<span class="fright nav-buttons">
-			<a id="paginatorFirstButtonEntry" class="ubutton uicon ui-state-disabled btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-step-backward" href="#"><i class="fa fa-step-backward"></i></a>
-				<a id="paginatorPreviousButtonEntry" class="ubutton uicon ui-state-disabled btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-left" href="#"><i class="fa fa-chevron-left"></i></a>
-			<a id="paginatorNextButtonEntry" class="ubutton uicon btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-chevron-right" href="/admin/event/search/page/2"><i class="fa fa-chevron-right"></i></a>
-			<a id="paginatorLastButtonEntry" class="ubutton uicon btn grey lighten-4" data-padding="0.1em" data-font-size=".8em" data-icon="icon-step-forward" href="/admin/event/search/page/1884"><i class="fa fa-step-forward"></i></a>
-		</span> 
 	</div>
-</div>
-
-<!-- END PAGINATION CONTROL -->
-
-</div>
-
-<!-- END SEARCH PAGINATOR -->
 
 <!-- START TABLE -->
   
@@ -272,18 +190,18 @@
     	<tr class="">
     		<td>
     			<img class="event-fb-fallback" style="width:45px;min-height:45px;padding: 2px 0.5em 0.5em 2px; vertical-align:top; float:left;" src="https://s3.amazonaws.com/bazu-static/img/event/banner/facebook-icon/13232.jpg?152040416">
-    			<a id="eventLinkDigitalMediaPhotoUploadingTestEvent" href="event-overview.html">2017 Miami Marathon and Half Marathon</a>
+    			<a id="eventLinkDigitalMediaPhotoUploadingTestEvent" href="event-overview.html">2019 Miami Marathon and Half Marathon</a>
   			</td>
-  			<td>Evansville, IN</td>
-  			<td>12/12/2050 9:00 AM</td>
-  			<td>Brandon Campbell Events</td>
+  			<td>Miami, FL</td>
+  			<td>1/28/2019 6:00 AM</td>
+  			<td>Life Time Events</td>
   			<td>
         	Online:
       		Open<br>
     			Onsite:
       		Open<br>
       	</td>
-  			<td>32</td>
+  			<td>20,000</td>
 			</tr>
 			<tr class="">
 				<td>

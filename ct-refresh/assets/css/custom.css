@@ -1283,6 +1283,14 @@ fieldset:disabled a.btn {
 	.race-list .btn{
 		width: 85% !important;
 	}
+
+	.fright .btn{
+		text-indent: -9999px;
+	}
+
+	.fright .btn i{
+		margin-right: 0px;
+	}
 }
 
 /* FORM */

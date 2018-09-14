@@ -1277,7 +1277,7 @@ fieldset:disabled a.btn {
 		display: none;
 		float: none;
 	}
-	.icon-random, .icon-tags, .icon-pencil{
+	.icon-random, .icon-tags, .icon-pencil, .icon-ok-sign{
 		display: none;
 	}
 	.race-list .btn{
@@ -1353,6 +1353,10 @@ form.event-search .control-group.fr-status, form.event-search .control-group.fr-
 	padding: 6px 30px;
 	width: 20%;
 	margin-left: 1%;
+}
+
+#fieldset-Search #submitsearch i{
+	display: none;
 }
 
 @media (max-width: 767px) {
